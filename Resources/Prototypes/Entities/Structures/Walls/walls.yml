@@ -232,6 +232,7 @@
   - type: AcousticData # VDS
     absorption: 5
     reflectRay: true
+  - type: SoundBlocker # Trauma
 
 - type: entity
   abstract: true

@@ -144,6 +144,8 @@
   - type: AcousticData # VDS
     absorption: 10
     reflectRay: true
+  - type: SoundBlocker # Trauma
+    soundBlockPercent: 0.5
 
 - type: entity
   parent: Window

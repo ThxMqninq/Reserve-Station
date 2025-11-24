@@ -87,6 +87,7 @@
   - type: InteractionVerbs # EE: Interaction Verbs
     allowedVerbs:
     - KnockOn
+  - type: SoundBlocker # Trauma
 
 - type: entity
   parent: BaseMaterialDoor
@@ -330,7 +331,7 @@
     openingAnimationTime: 1.2
     closingAnimationTime: 1.2
     openSound:
-      path: /Audio/Effects/card_drag.ogg 
+      path: /Audio/Effects/card_drag.ogg
     closeSound:
       path: /Audio/Effects/card_drag.ogg
   - type: MeleeSound

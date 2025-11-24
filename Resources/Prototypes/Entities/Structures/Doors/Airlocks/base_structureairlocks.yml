@@ -296,6 +296,7 @@
   - type: AcousticData # VDS
     absorption: 10
     reflectRay: true
+  - type: SoundBlocker # Trauma
   placement:
     mode: SnapgridCenter
 
