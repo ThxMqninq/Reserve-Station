@@ -180,6 +180,10 @@ public sealed partial class AudioMuffleSystem : SharedAudioMuffleSystem
     private void RemoveAudioMuffle(Entity<AudioMuffleComponent> ent)
     {
         var audioComp = _audioQuery.Comp(ent);
+
+        if (!HasComp<AudioComponent>(ent)) // Reserve
+            return;
+
         if (ent.Comp.Indices is { } indices)
         {
             if (ReverseAudioPosDict.TryGetValue(indices, out var set))
