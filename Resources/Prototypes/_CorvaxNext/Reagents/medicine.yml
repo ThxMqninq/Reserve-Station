@@ -26,9 +26,9 @@
             Cellular: -4
             Holy: -4
             Radiation: -4
-      - !type:ModifyBleedAmount
+      - !type:ModifyBleed
         amount: -2
-      - !type:ChemHealEyeDamage
+      - !type:EyeDamage
       - !type:PopupMessage
         type: Local
         visualType: Medium
@@ -36,12 +36,12 @@
         probability: 0.3
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 293.15
         amount: 10
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           min: 293.15
         amount: -10
 
@@ -83,11 +83,11 @@
         time: 10
         type: Add
         refresh: true
-      - !type:ChemHealEyeDamage
+      - !type:EyeDamage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           min: 1
-      - !type:ChemCleanBloodstream
+      - !type:CleanBloodstream
         cleanseRate: 5
       - !type:AdjustReagent
         reagent: Histamine
@@ -182,7 +182,7 @@
         type: Remove
       - !type:ResetNarcolepsy
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           min: 1
       - !type:PopupMessage
         type: Local
@@ -191,7 +191,7 @@
         probability: 0.3
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           min: 25
         damage:
@@ -199,15 +199,15 @@
             Poison: 5
             Asphyxiation: 5
             Caustic: 5
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           min: 25
         probability: 0.25
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           min: 25
         emote: Scream
@@ -215,7 +215,7 @@
         probability: 0.3
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           min: 25
         type: Local
@@ -225,14 +225,14 @@
       - !type:AdjustAlert
         alertType: Walking
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           max: 1
         clear: False
         time: 10
       - !type:MovespeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase
           max: 1
         walkSpeedModifier: 0.3

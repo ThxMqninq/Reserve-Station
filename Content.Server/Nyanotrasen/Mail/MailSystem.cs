@@ -1,37 +1,16 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Tom <t.jans@student.fontys.nl>
-// SPDX-FileCopyrightText: 2025 Vrilly <tnjans@outlook.de>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-//
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using Content.Server.Access.Systems;
-using Content.Server.Cargo.Components;
 using Content.Server.Cargo.Systems;
 using Content.Server.Chat.Systems;
 using Content.Server.Damage.Components;
 using Content.Server._DV.Cargo.Components;
 using Content.Server._DV.Cargo.Systems;
-using Content.Server.Kitchen.Components; // Reserve edit: mail-fix #328
 using Content.Server.Mail.Components;
 using Content.Server.Destructible.Thresholds.Behaviors;
-using Content.Server.Destructible.Thresholds.Triggers;
-using Content.Server.Destructible.Thresholds;
 using Content.Server.Destructible;
 using Content.Server.Mind;
 using Content.Server.Popups;
@@ -45,9 +24,9 @@ using Content.Shared.Access;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter; // Reserve edit: mail-fix #328
+using Content.Shared.Kitchen.Components; // Reserve edit: mail-fix #328
 using Content.Shared.Mail;
 using Content.Shared.Destructible;
-using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Examine;
 using Content.Shared.Fluids.Components;
@@ -66,50 +45,13 @@ using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Server.Access.Systems;
 using Content.Shared.Cargo.Components;
-using Content.Server.Cargo.Systems;
-using Content.Server.Chat.Systems;
-using Content.Server.Chemistry.Containers.EntitySystems;
-using Content.Server.Damage.Components;
-using Content.Server._DV.Cargo.Components;
-using Content.Server.Destructible;
-using Content.Server.Destructible.Thresholds;
-using Content.Server.Destructible.Thresholds.Behaviors;
-using Content.Server.Destructible.Thresholds.Triggers;
-using Content.Server.Item;
-using Content.Server.Mail.Components;
-using Content.Server.Mind;
-using Content.Server.Popups;
-using Content.Server.Power.Components;
-using Content.Server.Station.Systems;
-using Content.Server.Spawners.EntitySystems;
-using Content.Shared.Access;
-using Content.Shared.Access.Components;
-using Content.Shared.Access.Systems;
-using Content.Shared.Damage;
-using Content.Shared.Emag.Components;
-using Content.Shared.Destructible;
-using Content.Shared.Emag.Systems;
-using Content.Shared.Examine;
-using Content.Shared.Fluids.Components;
-using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Interaction;
-using Content.Shared.Interaction.Events;
-using Content.Shared.Mail;
 using Content.Shared.Maps;
-using Content.Shared.Nutrition.Components;
-using Content.Shared.Nutrition.EntitySystems;
-using Content.Shared.PDA;
 using Content.Shared.Random.Helpers;
-using Content.Shared.Roles;
-using Content.Shared.Storage;
-using Content.Shared.Tag;
-using Robust.Shared.Audio.Systems;
 using Timer = Robust.Shared.Timing.Timer;
-using Content.Server._DV.Cargo.Systems;
 using Content.Shared.Chat;
-using Content.Shared.Chemistry.EntitySystems; // Einstein Engines - Languages
+using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.Destructible.Thresholds.Triggers;
 
 namespace Content.Server.Mail
 {
@@ -141,6 +83,10 @@ namespace Content.Server.Mail
         [Dependency] private readonly RadioSystem _radioSystem = default!; // ImpStation - for radio notifications of new mail
 
         private ISawmill _sawmill = default!;
+
+        private static readonly ProtoId<TagPrototype> MailTag = "Mail";
+        private static readonly ProtoId<TagPrototype> TrashTag = "Trash";
+        private static readonly ProtoId<TagPrototype> RecyclableTag = "Recyclable";
 
         public override void Initialize()
         {
@@ -174,7 +120,7 @@ namespace Content.Server.Mail
 
                 if (mailTeleporter.Accumulator >= mailTeleporter.TeleportInterval.TotalSeconds)
                 {
-                    mailTeleporter.Accumulator -= (float)mailTeleporter.TeleportInterval.TotalSeconds;
+                    mailTeleporter.Accumulator -= (float) mailTeleporter.TeleportInterval.TotalSeconds;
                     var timeUntilNextMail = TimeSpan.FromSeconds(double.Round(mailTeleporter.TeleportInterval.TotalSeconds - mailTeleporter.Accumulator));
                     SpawnMail(mailTeleporter.Owner, timeUntilNextMail, mailTeleporter);
                 }
@@ -202,8 +148,8 @@ namespace Content.Server.Mail
         private void OnRemove(EntityUid uid, MailComponent component, ComponentRemove args)
         {
             // Make sure the priority timer doesn't run.
-            if (component.priorityCancelToken != null)
-                component.priorityCancelToken.Cancel();
+            if (component.PriorityCancelToken != null)
+                component.PriorityCancelToken.Cancel();
         }
 
         /// <summary>
@@ -234,7 +180,7 @@ namespace Content.Server.Mail
                 return;
 
             // This is a successful delivery. Keep the failure timer from triggering.
-            component.priorityCancelToken?.Cancel();
+            component.PriorityCancelToken?.Cancel();
 
             // The priority tape is visually considered to be a part of the
             // anti-tamper lock, so remove that too.
@@ -595,8 +541,8 @@ namespace Content.Server.Mail
             {
                 foreach (var role in department.Roles)
                 {
-                    if (_prototypeManager.TryIndex(role, out JobPrototype? _jobPrototype)
-                        && _jobPrototype.LocalizedName == jobTitle)
+                    if (_prototypeManager.TryIndex(role, out JobPrototype? jobPrototype)
+                        && jobPrototype.LocalizedName == jobTitle)
                     {
                         jobDepartment = department.ID;
                         return true;
@@ -674,9 +620,9 @@ namespace Content.Server.Mail
                 mailComp.Penalty += component.PriorityMalus;
                 _appearanceSystem.SetData(uid, MailVisuals.IsPriority, true);
 
-                mailComp.priorityCancelToken = new CancellationTokenSource();
+                mailComp.PriorityCancelToken = new CancellationTokenSource();
 
-                Timer.Spawn((int)component.PriorityDuration.TotalMilliseconds,
+                Timer.Spawn((int) component.PriorityDuration.TotalMilliseconds,
                     () =>
                     {
                         // DeltaV - Expired mail recorded to logistic stats
@@ -689,7 +635,7 @@ namespace Content.Server.Mail
 
                         PenalizeStationFailedDelivery(uid, mailComp, "mail-penalty-expired");
                     },
-                    mailComp.priorityCancelToken.Token);
+                    mailComp.PriorityCancelToken.Token);
             }
 
             _appearanceSystem.SetData(uid, MailVisuals.JobIcon, recipient.JobIcon);
@@ -698,7 +644,7 @@ namespace Content.Server.Mail
                 ("recipient", recipient.Name)));
 
             var accessReader = EnsureComp<AccessReaderComponent>(uid);
-            _accessReader.AddAccess((uid, accessReader), recipient.AccessTags);
+            _accessReader.TryAddAccess((uid, accessReader), recipient.AccessTags);
         }
 
         /// <summary>
@@ -872,7 +818,7 @@ namespace Content.Server.Mail
                 var mail = EntityManager.SpawnEntity(chosenParcel, Transform(uid).Coordinates);
                 SetupMail(mail, component, candidate);
 
-                _tagSystem.AddTag(mail, "Mail"); // Frontier
+                _tagSystem.AddTag(mail, MailTag); // Frontier
             }
 
             if (_containerSystem.TryGetContainer(uid, "queued", out var queued))
@@ -901,7 +847,7 @@ namespace Content.Server.Mail
             _audioSystem.PlayPvs(component.OpenSound, uid);
 
             if (user != null)
-                _handsSystem.TryDrop((EntityUid)user);
+                _handsSystem.TryDrop((EntityUid) user);
 
             if (!_containerSystem.TryGetContainer(uid, "contents", out var contents))
             {
@@ -915,8 +861,8 @@ namespace Content.Server.Mail
                 _handsSystem.PickupOrDrop(user, entity);
             }
 
-            _tagSystem.AddTag(uid, "Trash");
-            _tagSystem.AddTag(uid, "Recyclable");
+            _tagSystem.AddTag(uid, TrashTag);
+            _tagSystem.AddTag(uid, RecyclableTag);
             component.IsEnabled = false;
             UpdateMailTrashState(uid, true);
         }

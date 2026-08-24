@@ -1,6 +1,3 @@
-﻿# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-#
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
@@ -135,18 +132,6 @@
       weight: 0.1
     - id: CdDiskXgOnboarding4
       weight: 0.1
-
-# Reserve: CD disks fix start
-- type: entityTable
-  id: RandomCDDiskOrCase
-  table: !type:GroupSelector
-    children:
-    - !type:NestedSelector
-      tableId: RandomCDDisk
-      weight: 1
-    - id: DiskCaseFilled
-      weight: 0.6
-# Reserve: CD disks fix end
 
 - type: entityTable
   id: RandomVinylDisk

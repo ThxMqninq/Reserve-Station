@@ -6,7 +6,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailEMP
   suffix: EMP
   components:
@@ -16,7 +16,7 @@
     - id: PaperMailNFEMPPreparedness
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailSmoke
   suffix: Smoke
   components:
@@ -25,7 +25,7 @@
     - id: DelayedSmoke
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailPAI
   suffix: PAI
   components:
@@ -46,7 +46,7 @@
       prob: 0.01
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailPlushie
   suffix: Plushies
   components:
@@ -100,7 +100,7 @@
       orGroup: Plushie
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailNFVagueThreat
   suffix: Vague threat
   components:
@@ -146,7 +146,7 @@
       orGroup: ThreateningObject
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailFigurines
   suffix: Figurines
   components:
@@ -156,7 +156,7 @@
       amount: 3
 
 - type: entity
-  parent: BaseMailLarge
+  parent: PackageDelivery
   id: MailPlushieThrongler
   suffix: Plushie Throngler
   components:
@@ -165,7 +165,7 @@
     - id: PlushieThrongler
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailInstrumentSmall
   suffix: Instruments
   components:
@@ -211,7 +211,7 @@
       prob: 0.01
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailCritters
   suffix: Critters
   components:
@@ -272,7 +272,7 @@
         prob: 0.01 # Rare
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailFlowers
   suffix: Flowers
   components:
@@ -285,7 +285,7 @@
     - id: FoodLily
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailCrayons
   suffix: Crayons
   components:
@@ -294,7 +294,7 @@
     - id: CrayonBox
 
 - type: entity
-  parent: BaseMail
+  parent: LetterDelivery
   id: MailLowMoney
   suffix: Money
   components:

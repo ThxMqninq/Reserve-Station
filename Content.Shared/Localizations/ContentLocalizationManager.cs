@@ -1,29 +1,3 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 KrasnoshchekovPavel <119816022+KrasnoshchekovPavel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Kyle Tyo <akikai297@gmail.com>
-// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 ReserveBot <211949879+ReserveBot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 Svarshik <96281939+lexaSvarshik@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 ThxMqninq <mlakomkin8@gmail.com>
-// SPDX-FileCopyrightText: 2025 echotry <48294642+echotry-ss14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 nazrin <tikufaev@outlook.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
-//
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Globalization;
@@ -38,8 +12,7 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly ILocalizationManager _loc = default!;
 
         // If you want to change your codebase's language, do it here.
-        private const string Culture = "ru-RU"; // Reserve-Localization
-        private const string FallbackCulture = "en-US"; // Reserve-Localization
+        private const string Culture = "en-US";
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -55,12 +28,8 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
-            var fallbackCulture = new CultureInfo(FallbackCulture); // Reserve-Localization
 
             _loc.LoadCulture(culture);
-            _loc.LoadCulture(fallbackCulture); // Reserve-Localization
-            _loc.SetFallbackCluture(fallbackCulture); // Reserve-Localization
-            _loc.AddFunction(culture, "MANY", FormatMany); // Reserve-Localization: To prevent problems in auto-generated locale files
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);
@@ -73,16 +42,6 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(culture, "NATURALPERCENT", FormatNaturalPercent);
             _loc.AddFunction(culture, "PLAYTIME", FormatPlaytime);
 
-            _loc.AddFunction(fallbackCulture, "PRESSURE", FormatPressure);
-            _loc.AddFunction(fallbackCulture, "POWERWATTS", FormatPowerWatts);
-            _loc.AddFunction(fallbackCulture, "POWERJOULES", FormatPowerJoules);
-            _loc.AddFunction(fallbackCulture, "ENERGYWATTHOURS", FormatEnergyWattHours);
-            _loc.AddFunction(fallbackCulture, "UNITS", FormatUnits);
-            _loc.AddFunction(fallbackCulture, "TOSTRING", args => FormatToString(fallbackCulture, args));
-            _loc.AddFunction(fallbackCulture, "LOC", FormatLoc);
-            _loc.AddFunction(fallbackCulture, "NATURALFIXED", FormatNaturalFixed);
-            _loc.AddFunction(fallbackCulture, "NATURALPERCENT", FormatNaturalPercent);
-            _loc.AddFunction(fallbackCulture, "PLAYTIME", FormatPlaytime);
 
             /*
              * The following language functions are specific to the english localization. When working on your own
@@ -160,8 +119,8 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} и {list[1]}", // reserve edit, and -> и
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, и {list[^1]}" // reserve edit, and -> и
+                2 => $"{list[0]} and {list[1]}",
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, and {list[^1]}"
             };
         }
 
@@ -174,8 +133,8 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} или {list[1]}", // reserve edit, or -> или
-                _ => $"{string.Join(" или ", list)}" // reserve edit, or -> или
+                2 => $"{list[0]} or {list[1]}",
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, or {list[^1]}"
             };
         }
 

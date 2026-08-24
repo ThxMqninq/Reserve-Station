@@ -47,5 +47,5 @@
     sprite: Markers/jobs.rsi
     layers:
     - state: green
-    - sprite: Mobs/Species/Terminator/parts.rsi
+    - sprite: Mobs/Species/Skeleton/parts.rsi
       state: skull_icon

@@ -1,5 +1,3 @@
-// SPDX-FileCopyrightText: 2026 Space Station 14 Contributors
-//
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Construction.Prototypes;
@@ -7,11 +5,9 @@ using Content.Shared.Construction;
 using Content.Shared.Construction.NodeEntities;
 using Content.Shared.Construction.Steps;
 using Content.Shared.Chemistry.Reaction;
-using Content.Shared.EntityEffects;
-using Content.Shared.EntityEffects.Effects;
+using Content.Goobstation.Shared.EntityEffects;
 using Content.Shared.Kitchen;
 using Content.Shared.Nutrition.Components;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Markdown.Value;
 using System.Linq;
@@ -184,7 +180,7 @@ public sealed class FoodGuideDataSystem : EntitySystem
         {
             foreach (var effect in reaction.Effects)
             {
-                if (effect is not CreateEntityReactionEffect createEffect)
+                if (effect is not CreateRQuantityEntityReactionEffect createEffect)
                     continue;
 
                 AddSource(createEffect.Entity, new FoodEntitySource(FoodEntitySourceKind.MixingReaction, reaction, null, null));

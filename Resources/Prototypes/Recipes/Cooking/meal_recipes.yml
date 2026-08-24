@@ -1,182 +1,3 @@
-# SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 2020 FL-OZ <yetanotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Ephememory <66768086+Ephememory@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Matz05 <Matz05@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 CrudeWax <75271456+CrudeWax@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DoubleRiceEddiedd <149714181+DoubleRiceEddiedd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Feluk6174 <77207907+Feluk6174@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Fluffiest Floofers <thebluewulf@gmail.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 SonicHDC <100022571+SonicHDC@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Timothy Teakettle <59849408+timothyteakettle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 dahnte <70238020+dahnte@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 forthbridge <79264743+forthbridge@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 nmajask <nmajask@gmail.com>
-# SPDX-FileCopyrightText: 2023 phunnyguy <90366172+phunnyguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 August Sun <45527070+august-sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CheddaCheez <cheddacheezy@gmail.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DieselMohawk <gavin.drinka@gmail.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-# SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 GreyMario <mariomister541@gmail.com>
-# SPDX-FileCopyrightText: 2024 Gyrandola <pasta.frollagg@gmail.com>
-# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-# SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
-# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MisterMecky <mrmecky@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-# SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-# SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RumiTiger <154005209+RumiTiger@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 TheKittehJesus <29379890+SamGithubAccount@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TurboTrackerss14 <130304754+TurboTrackerss14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unisol <1929445+Unisol@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 august-sun <45527070+august.sun@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 degradka <69397649+degradka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 mkanke-real <mikekanke@gmail.com>
-# SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 osjarw <oskariwjarvinen@gmail.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SG6732 <151011904+SG6732@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Smith <182301147+AgentSmithRadio@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
-# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-#
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: microwaveMealRecipe
@@ -193,7 +14,7 @@
   name: cotton bun recipe
   result: FoodCottonBun
   time: 5
-  group: Ingredients  # Reserve edit: Fix recipe categories
+  group: Moth
   solids:
     FoodDoughCottonSlice: 1
 
@@ -233,7 +54,7 @@
   name: appendix burger recipe
   result: FoodBurgerAppendix
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     OrganHumanAppendix: 1
@@ -243,7 +64,7 @@
   name: bacon burger recipe
   result: FoodBurgerBacon
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatBacon: 1
@@ -254,7 +75,7 @@
   name: baseball burger recipe
   result: FoodBurgerBaseball
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     BaseBallBat: 1
@@ -264,7 +85,7 @@
   name: bearger recipe
   result: FoodBurgerBear
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatBear: 1
@@ -274,12 +95,12 @@
   name: big bite burger recipe
   result: FoodBurgerBig
   time: 15
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 2
     FoodCheeseSlice: 1
-    FoodTomatoSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
     FoodOnionSlice: 2
 
 - type: microwaveMealRecipe #Added to metamorph recipes
@@ -287,7 +108,7 @@
   name: brain burger recipe
   result: FoodBurgerBrain
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     OrganHumanBrain: 1
@@ -297,7 +118,7 @@
   name: cat burger recipe
   result: FoodBurgerCat
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -308,7 +129,7 @@
   name: cheeseburger recipe
   result: FoodBurgerCheese
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -319,7 +140,7 @@
   name: chicken sandwich recipe
   result: FoodBurgerChicken
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     Mayo: 5
   solids:
@@ -331,7 +152,7 @@
   name: clownburger recipe
   result: FoodBurgerClown
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingMaskClown: 1
@@ -341,7 +162,7 @@
   name: corgi burger recipe
   result: FoodBurgerCorgi
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatCorgi: 1
@@ -351,7 +172,7 @@
   name: crab burger recipe
   result: FoodBurgerCrab
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatCrab: 2
@@ -361,7 +182,7 @@
   name: crazy hamburger recipe
   result: FoodBurgerCrazy
   time: 15
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     OilOlive: 15
   solids:
@@ -369,7 +190,7 @@
     FoodMeat: 2
     FoodCheeseSlice: 2
     FoodChiliPepper: 1
-    FoodCabbageSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCabbage: 1
     CrayonGreen: 1
     Flare: 1
 
@@ -378,7 +199,7 @@
   name: duck sandwich recipe
   result: FoodBurgerDuck
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatDuck: 1
@@ -389,7 +210,7 @@
   name: empowered burger recipe
   result: FoodBurgerEmpowered
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     SheetPlasma1: 2
@@ -399,7 +220,7 @@
   name: fillet-o-carp burger recipe
   result: FoodBurgerCarp
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatFish: 1
@@ -410,7 +231,7 @@
   name: five alarm burger recipe
   result: FoodBurgerFive
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -421,7 +242,7 @@
   name: ghost burger recipe
   result: FoodBurgerGhost
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     Ectoplasm: 1
@@ -431,7 +252,7 @@
   name: human burger recipe
   result: FoodBurgerHuman
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatHuman: 1
@@ -441,7 +262,7 @@
   name: jelly burger recipe
   result: FoodBurgerJelly
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodJellyAmanita: 1
@@ -451,7 +272,7 @@
   name: McGuffin recipe
   result: FoodBurgerMcguffin
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     Egg: 12
   solids:
@@ -463,7 +284,7 @@
   name: BBQ rib sandwich recipe
   result: FoodBurgerMcrib
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMealRibs: 1
@@ -474,7 +295,7 @@
   name: mime burger recipe
   result: FoodBurgerMime
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingMaskMime: 1
@@ -484,7 +305,7 @@
   name: plain burger recipe
   result: FoodBurgerPlain
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -494,7 +315,7 @@
   name: rat burger recipe
   result: FoodBurgerRat
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatRat: 1
@@ -504,7 +325,7 @@
   name: roburger recipe
   result: FoodBurgerRobot
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     MicroManipulatorStockPart: 2
@@ -515,7 +336,7 @@
   name: soylent burger recipe
   result: FoodBurgerSoy
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodCheeseSlice: 2
@@ -526,7 +347,7 @@
   name: spell burger recipe
   result: FoodBurgerSpell
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingHeadHatWizard: 1
@@ -536,7 +357,7 @@
   name: super bite burger recipe
   result: FoodBurgerSuper
   time: 25
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 5
     Egg: 12
@@ -544,14 +365,14 @@
     FoodBreadBun: 1
     FoodMeat: 2
     FoodCheeseSlice: 2
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 2
 
 - type: microwaveMealRecipe
   id: RecipeTofuBurger
   name: tofu burger recipe
   result: FoodBurgerTofu
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodTofuSlice: 1
@@ -561,7 +382,7 @@
   name: xenoburger recipe
   result: FoodBurgerXeno
   time: 10
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatXeno: 1
@@ -570,7 +391,7 @@
   id: RecipeMothRoachburger
   name: mothroachburger recipe
   result: FoodBurgerMothRoach
-  group: Burger  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadBun: 1
     MobMothroach: 1
@@ -582,10 +403,10 @@
   name: banana bread recipe
   result: FoodBreadBanana
   time: 15
-  group: LoafCakes
+  group: Breads
   solids:
     FoodDough: 1
-    FoodBananaSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 1
 
 - type: microwaveMealRecipe
   id: RecipeCornbread
@@ -629,7 +450,7 @@
     Nothing: 5
   solids:
     FoodDough: 1
-    FoodMimanaSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodMimana: 1
 
 - type: microwaveMealRecipe
   id: RecipeBread
@@ -761,7 +582,7 @@
   group: Breads
   solids:
     FoodBreadPlainSlice: 1
-    FoodGarlicSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodGarlic: 1
     FoodButterSlice: 1
 
 - type: microwaveMealRecipe
@@ -800,9 +621,9 @@
   name: onion rings recipe
   result: FoodOnionRings
   time: 15
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
-    FoodOnionSlice: 6  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOnionSlice: 1
 
 #Pizzas TODO: contruction graph based pizza
 - type: microwaveMealRecipe
@@ -814,7 +635,7 @@
   solids:
     FoodDoughFlat: 1
     FoodCheeseSlice: 1
-    FoodTomatoSlice: 12  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 4
 
 - type: microwaveMealRecipe
   id: RecipeMushroomPizza
@@ -836,7 +657,7 @@
     FoodDoughFlat: 1
     FoodMeat: 3
     FoodCheeseSlice: 1
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
 
 - type: microwaveMealRecipe
   id: RecipeVegetablePizza
@@ -846,12 +667,10 @@
   group: Pizza
   solids:
     FoodDoughFlat: 1
-    # Reserve edit start: Orchid's Garden - Tidy Kitchen
-    FoodEggplantSlice: 2
-    FoodCarrotSlice: 2
-    FoodCornSlice: 3
-    FoodTomatoSlice: 3
-    # Reserve edit end: Orchid's Garden - Tidy Kitchen
+    FoodEggplant: 1
+    FoodCarrot: 1
+    FoodCorn: 1
+    FoodTomato: 1
 
 - type: microwaveMealRecipe
   id: RecipeHawaiianPizza
@@ -874,7 +693,7 @@
     FoodDoughFlat: 1
     LeavesCannabis: 2
     FoodCheeseSlice: 1
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
 
 - type: microwaveMealRecipe
   id: RecipeDonkpocketPizza
@@ -886,7 +705,7 @@
     FoodDoughFlat: 1
     FoodDonkpocketWarm: 3
     FoodCheeseSlice: 1
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
 
 - type: microwaveMealRecipe
   id: RecipeUraniumPizza
@@ -897,7 +716,7 @@
   solids:
     FoodDoughFlat: 1
     FoodChiliPepper: 2
-    FoodTomatoSlice: 10  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 2
     SheetUranium1: 2
 
 - type: microwaveMealRecipe
@@ -915,7 +734,6 @@
   name: world peazza recipe
   result: FoodPizzaWorldpeas
   time: 30
-  group: Pizza  # Reserve edit: Fix recipe categories
   solids:
     FoodDoughFlat: 1
     FoodWorldPeas: 3
@@ -940,7 +758,7 @@
   group: Pasta
   solids:
     FoodNoodlesBoiled: 1
-    FoodTomatoSlice: 8  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 2
 
 - type: microwaveMealRecipe
   id: RecipeMeatballSpaghetti
@@ -960,7 +778,7 @@
   group: Pasta
   solids:
     FoodNoodlesBoiled: 1
-    FoodButterSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodButter: 1
 
 - type: microwaveMealRecipe
   id: RecipeChowMein
@@ -972,9 +790,9 @@
     Egg: 6
   solids:
     FoodNoodlesBoiled: 1
-    FoodEggplantSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCarrotSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCornSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodEggplant: 1
+    FoodCarrot: 1
+    FoodCorn: 1
 
 - type: microwaveMealRecipe
   id: RecipeOatmeal
@@ -1044,7 +862,7 @@
     Egg: 6
   solids:
     FoodRiceBoiled: 1
-    FoodCarrotSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 1
 
 - type: microwaveMealRecipe
   id: RecipeCopypasta
@@ -1067,7 +885,7 @@
     Water: 10
   solids:
     FoodBowlBig: 1
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
     FoodMushroom: 1
     FoodMeatFish: 1
 
@@ -1082,8 +900,8 @@
   solids:
     FoodBowlBig: 1
     FoodMeatMeatball: 1
-    FoodCarrotSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodPotatoSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 1
+    FoodPotato: 1
 
 - type: microwaveMealRecipe
   id: RecipeNettleSoup
@@ -1097,7 +915,7 @@
   solids:
     FoodBowlBig: 1
     Nettle: 1
-    FoodPotatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPotato: 1
 
 - type: microwaveMealRecipe
   id: RecipeEyeballSoup
@@ -1110,8 +928,8 @@
   solids:
     FoodBowlBig: 1
     OrganHumanEyes: 1
-    FoodCarrotSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodPotatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 1
+    FoodPotato: 1
 
 - type: microwaveMealRecipe
   id: RecipeAmanitaJelly
@@ -1162,12 +980,10 @@
   solids:
     FoodBowlBig: 1
     FoodMeatCutlet: 3
-    # Reserve edit start: Orchid's Garden - Tidy Kitchen
-    FoodTomatoSlice: 5
-    FoodPotatoSlice: 3
-    FoodCarrotSlice: 4
-    FoodEggplantSlice: 4
-    # Reserve edit end: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
+    FoodPotato: 1
+    FoodCarrot: 1
+    FoodEggplant: 1
     FoodMushroom: 1
 
 - type: microwaveMealRecipe
@@ -1180,7 +996,7 @@
     Water: 10
   solids:
     FoodBowlBig: 1
-    FoodTomatoSlice: 8  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 2
 
 - type: microwaveMealRecipe
   id: RecipeTomatoBloodSoup
@@ -1192,7 +1008,7 @@
     Blood: 10
   solids:
     FoodBowlBig: 1
-    FoodBloodTomatoSlice: 8  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBloodTomato: 2
 
 - type: microwaveMealRecipe
   id: RecipeWingFangChuSoup
@@ -1228,12 +1044,10 @@
     Water: 5
   solids:
     FoodBowlBig: 1
-    # Reserve edit start: Orchid's Garden - Tidy Kitchen
-    FoodCornSlice: 4
-    FoodCarrotSlice: 4
-    FoodPotatoSlice: 4
-    FoodEggplantSlice: 4
-    # Reserve edit end: Orchid's Garden - Tidy Kitchen
+    FoodCorn: 1
+    FoodCarrot: 1
+    FoodPotato: 1
+    FoodEggplant: 1
 
 - type: microwaveMealRecipe
   id: RecipeClownTearsSoup
@@ -1245,7 +1059,7 @@
     Water: 10
   solids:
     FoodBowlBig: 1
-    FoodBananaSlice: 6  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 1
     ShardGlass: 1
     #idk probably replace shard with someting bananium when #14663 merged
 
@@ -1261,7 +1075,7 @@
     Blackpepper: 1
   solids:
     FoodBowlBig: 1
-    FoodBananaSlice: 6  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 1
     MonkeyCube: 1
 
 - type: microwaveMealRecipe
@@ -1299,7 +1113,7 @@
   solids:
     FoodBowlBig: 1
     FoodOnionSlice: 1
-    FoodButterSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodButter: 1
     FoodMeatSnailCooked: 1
 
 #Pies
@@ -1323,7 +1137,7 @@
   group: Pie
   solids:
     FoodDoughPie: 1
-    FoodAppleSlice: 12  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodApple: 3
     FoodPlateTin: 1
 
 - type: microwaveMealRecipe
@@ -1345,7 +1159,7 @@
   group: Pie
   solids:
     FoodDoughPie: 1
-    FoodBananaSlice: 12  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 3
     FoodPlateTin: 1
 
 - type: microwaveMealRecipe
@@ -1400,7 +1214,7 @@
   group: Pie
   solids:
     FoodDoughPie: 1
-    FoodPumpkinSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPumpkin: 1
     FoodPlateTin: 1
 
 #- type: microwaveMealRecipe
@@ -1447,12 +1261,12 @@
   time: 15
   group: Pie
   reagents:
-    # Gold: 10  # Reserve edit start: Orchid's Garden - Tidy Kitchen
+    Gold: 10
     Sugar: 5
     Milk: 5
   solids:
     FoodDoughPie: 1
-    FoodGoldenAppleSlice: 8  # Reserve edit start: Orchid's Garden - Tidy Kitchen
+    FoodApple: 2 #in absence of the real gapple i'm substituting one apple with 10u gold (one ingot)
     FoodPlateTin: 1
 
 - type: microwaveMealRecipe
@@ -1480,7 +1294,7 @@
     Milk: 5
   solids:
     FoodDoughPie: 1
-    FoodMimanaSlice: 12  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodMimana: 3
     FoodPlateTin: 1
 
 #Other
@@ -1534,22 +1348,22 @@
   name: space fries recipe
   result: FoodMealFries
   time: 15
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
-    FoodPotatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPotato: 1
 
 - type: microwaveMealRecipe
   id: RecipeCheesyFries
   name: cheesy fries recipe
   result: FoodMealFriesCheesy
   time: 15
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
-    FoodPotatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPotato: 1
     FoodCheeseSlice: 1
 
 - type: microwaveMealRecipe
@@ -1557,18 +1371,18 @@
   name: carrot fries recipe
   result: FoodMealFriesCarrot
   time: 15
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
-    FoodCarrotSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 1
 
 - type: microwaveMealRecipe
   id: RecipeNachos
   name: nachos recipe
   result: FoodMealNachos
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 1
   solids:
@@ -1580,7 +1394,7 @@
   name: cheesy nachos recipe
   result: FoodMealNachosCheesy
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     TableSalt: 1
   solids:
@@ -1593,7 +1407,7 @@
   name: cuban nachos recipe
   result: FoodMealNachosCuban
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   reagents:
     Ketchup: 5
   solids:
@@ -1606,9 +1420,9 @@
   name: popcorn recipe
   result: FoodSnackPopcorn
   time: 20
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
-    FoodCornSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCorn: 1
 
 - type: microwaveMealRecipe
   id: RecipePancake
@@ -1728,7 +1542,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodAppleSlice: 14  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodApple: 3
 
 - type: microwaveMealRecipe
   id: RecipeCarrotCake
@@ -1738,7 +1552,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodCarrotSlice: 14  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 3
 
 - type: microwaveMealRecipe
   id: RecipeLemonCake
@@ -1748,7 +1562,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodLemonSlice: 14  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodLemon: 3
 
 - type: microwaveMealRecipe
   id: RecipeLemoonCake
@@ -1758,7 +1572,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodLemoonSlice: 10  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodLemoon: 2
     FoodBerries: 1 #dark colouring
 
 - type: microwaveMealRecipe
@@ -1769,7 +1583,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodOrangeSlice: 14  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOrange: 3
 
 - type: microwaveMealRecipe
   id: RecipeBlueberryCake
@@ -1789,7 +1603,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodLimeSlice: 14  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodLime: 3
 
 - type: microwaveMealRecipe
   id: RecipeCheeseCake
@@ -1811,7 +1625,7 @@
   group: Cake
   solids:
     FoodCakePlain: 1
-    FoodPumpkinSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPumpkin: 1
 
 - type: microwaveMealRecipe
   id: RecipeClownCake
@@ -1895,8 +1709,8 @@
   time: 5
   group: Cake
   solids:
-    FoodCakePlain: 1
-    FoodBerries: 5
+    FoodCakeBlueberry: 1
+    FoodBerries: 2
   reagents:
     Milk: 10
 
@@ -1936,7 +1750,7 @@
     Sugar: 30
     Egg: 18
   solids:
-    FoodButterSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodButter: 2
     FoodSnackChocolateBar: 2
 
 #Donks i guess
@@ -1945,7 +1759,7 @@
   name: warm donk pocket recipe
   result: FoodDonkpocketWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocket: 1
 
@@ -1954,7 +1768,7 @@
   name: warm dank pocket recipe
   result: FoodDonkpocketDankWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketDank: 1
 
@@ -1963,7 +1777,7 @@
   name: warm spicy donk-pocket recipe
   result: FoodDonkpocketSpicyWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketSpicy: 1
 
@@ -1972,7 +1786,7 @@
   name: warm teriyaki-pocket recipe
   result: FoodDonkpocketTeriyakiWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketTeriyaki: 1
 
@@ -1981,7 +1795,7 @@
   name: warm pizza-pocket recipe
   result: FoodDonkpocketPizzaWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketPizza: 1
 
@@ -1990,7 +1804,7 @@
   name: warm honk-pocket recipe
   result: FoodDonkpocketHonkWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketHonk: 1
 
@@ -1999,7 +1813,7 @@
   name: warm berry-pocket recipe
   result: FoodDonkpocketBerryWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketBerry: 1
 
@@ -2008,7 +1822,7 @@
   name: warm stonk-pocket recipe
   result: FoodDonkpocketStonkWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketStonk: 1
 
@@ -2017,7 +1831,7 @@
   name: warm carp-pocket recipe
   result: FoodDonkpocketCarpWarm
   time: 5
-  group: Fastfood  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodDonkpocketCarp: 1
 
@@ -2026,7 +1840,6 @@
   name: warm moth-pocket recipe
   result: FoodDonkpocketMothWarm
   time: 5
-  group: Moth  # Reserve edit: Fix recipe categories
   solids:
     FoodDonkpocketMoth: 1
 
@@ -2041,7 +1854,7 @@
     FoodChiliPepper: 1
     FoodMeatCutlet: 1
     FoodOnionSlice: 1
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
 
 - type: microwaveMealRecipe
   id: RecipeColdChili
@@ -2063,7 +1876,7 @@
   solids:
     FoodBowlBig: 1
     FoodOnionSlice: 1
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
     BikeHorn: 1
 
 - type: microwaveMealRecipe
@@ -2077,7 +1890,7 @@
     FoodChiliPepper: 1
     FoodMeatCutlet: 1
     FoodOnionSlice: 1
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
     ClothingShoesClown: 1
 
 - type: microwaveMealRecipe
@@ -2086,8 +1899,9 @@
   result: FoodMealQueso
   time: 15
   group: Soup
-  reagents:
-    Blackpepper: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+  #todo Add blackpepper
+  #reagents:
+    #blackpepper: 5
   solids:
     FoodChiliPepper: 1
     FoodCheeseSlice: 2
@@ -2113,7 +1927,7 @@
   solids:
     FoodChiliPepper: 2
     FoodMeatCutlet: 1
-    FoodCornSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCorn: 1
 
 # SALADS: These should be moved out of the microwave as soon as possible
 - type: microwaveMealRecipe
@@ -2125,7 +1939,7 @@
   solids:
     FoodBowlBig: 1
     FoodAmbrosiaVulgaris: 3
-    FoodAppleSlice: 6  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodApple: 1
 
 - type: microwaveMealRecipe
   id: RecipeValidSalad
@@ -2136,7 +1950,7 @@
   solids:
     FoodBowlBig: 1
     FoodAmbrosiaVulgaris: 3
-    FoodPotatoSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPotato: 1
     FoodMeatMeatball: 1
 
 - type: microwaveMealRecipe
@@ -2150,7 +1964,7 @@
   solids:
     FoodBowlBig: 1
     FoodOnionRed: 1
-    FoodCabbageSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCabbage: 1
 
 - type: microwaveMealRecipe
   id: RecipeCaesarSalad
@@ -2162,10 +1976,10 @@
     OilOlive: 5
   solids:
     FoodBowlBig: 1
-    FoodOnionRedSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOnionRedSlice: 1
     FoodBreadPlainSlice: 1
     FoodCheeseSlice: 1
-    FoodCabbageSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCabbage: 1
 
 - type: microwaveMealRecipe
   id: RecipeCitrusSalad
@@ -2175,9 +1989,9 @@
   group: Salad
   solids:
     FoodBowlBig: 1
-    FoodOrangeSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodLemonSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodLimeSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOrange: 1
+    FoodLemon: 1
+    FoodLime: 1
 
 - type: microwaveMealRecipe
   id: RecipeKimchiSalad
@@ -2189,9 +2003,9 @@
     Vinegar: 5
   solids:
     FoodBowlBig: 1
-    FoodCarrotSlice: 4  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCabbageSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodGarlicSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodCarrot: 1
+    FoodCabbage: 1
+    FoodGarlic: 1
 
 - type: microwaveMealRecipe
   id: RecipeFruitSalad
@@ -2201,8 +2015,8 @@
   group: Salad
   solids:
     FoodBowlBig: 1
-    FoodOrangeSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodAppleSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOrange: 1
+    FoodApple: 1
     FoodGrape: 1
     FoodWatermelonSlice: 2
 
@@ -2214,8 +2028,8 @@
   group: Salad
   solids:
     FoodBowlBig: 1
-    FoodBananaSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodMangoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 1
+    FoodApple: 1
     FoodGrape: 1
     FoodWatermelonSlice: 2
 
@@ -2227,12 +2041,10 @@
   group: Salad
   solids:
     FoodWatermelon: 1
-    # Reserve edit start: Orchid's Garden - Tidy Kitchen
-    FoodAppleSlice: 3
-    FoodBananaSlice: 3
-    FoodLemonSlice: 3
-    FoodOrangeSlice: 3
-    # Reserve edit end: Orchid's Garden - Tidy Kitchen
+    FoodApple: 1
+    FoodBanana: 1
+    FoodLemon: 1
+    FoodOrange: 1
     FoodAmbrosiaVulgaris: 1
 
 # Muffins
@@ -2284,7 +2096,7 @@
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
-    FoodBananaSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodBanana: 1
   reagents:
     Sugar: 10
 
@@ -2384,7 +2196,6 @@
   name: cannabis butter recipe
   result: FoodCannabisButter
   time: 15
-  group: Ingredients  # Reserve edit: Fix recipe categories
   solids:
     FoodButter: 1
     LeavesCannabis: 6
@@ -2412,7 +2223,7 @@
   solids:
     FoodCorn: 1
     FoodPlate: 1
-    FoodButterSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodButter: 1
 
 - type: microwaveMealRecipe
   id: RecipePeaSoup
@@ -2515,7 +2326,6 @@
   name: beef taco recipe
   result: FoodTacoBeef
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodMeatCutlet: 1
@@ -2526,7 +2336,6 @@
   name: chicken taco recipe
   result: FoodTacoChicken
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodMeatChickenCutlet: 1
@@ -2537,20 +2346,18 @@
   name: fish taco recipe
   result: FoodTacoFish
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodMeatFish: 1
-    FoodOnionSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCabbageSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodOnionSlice: 2
+    FoodTomato: 1
+    FoodCabbage: 1
 
 - type: microwaveMealRecipe
   id: RecipeTacoRat
   name: rat taco recipe
   result: FoodTacoRat
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodCheeseSlice: 1
@@ -2561,28 +2368,37 @@
   name: beef taco supreme recipe
   result: FoodTacoBeefSupreme
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodCheeseSlice: 1
     FoodMeatCutlet: 1
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCabbageSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodOnionSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
+    FoodCabbage: 1
+    FoodOnionSlice: 2
 
 - type: microwaveMealRecipe
   id: RecipeTacoChickenSupreme
   name: beef taco supreme recipe
   result: FoodTacoChickenSupreme
   time: 10
-  group: Fastfood  # Reserve edit: Fix recipe categories
   solids:
     FoodTacoShell: 1
     FoodCheeseSlice: 1
     FoodMeatChickenCutlet: 1
-    FoodTomatoSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodCabbageSlice: 2  # Reserve edit: Orchid's Garden - Tidy Kitchen
-    FoodOnionSlice: 3  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
+    FoodCabbage: 1
+    FoodOnionSlice: 2
+
+- type: microwaveMealRecipe
+  id: RecipeTacoDragon
+  name: draco recipe
+  result: FoodTacoDragon
+  time: 10
+  group: Savory
+  solids:
+    FoodTacoShell: 1
+    FoodMeatDragonCutlet: 2
+    FoodChiliPepper: 1
 
 - type: microwaveMealRecipe
   id: RecipeCroissant
@@ -2621,7 +2437,7 @@
   name: inert meat anomaly recipe
   result: FoodMeatAnomaly
   time: 5
-  group: Ingredients  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     AnomalyCoreFleshInert: 1
 
@@ -2630,7 +2446,7 @@
   name: meat anomaly recipe
   result: FoodMeatAnomaly
   time: 5
-  group: Ingredients  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     AnomalyCoreFlesh: 1
 
@@ -2648,7 +2464,7 @@
   name: grilled cheese sandwich recipe
   result: FoodBakedGrilledCheeseSandwich
   time: 10
-  group: Bread  # Reserve edit: Fix recipe categories
+  group: Savory
   solids:
     FoodBreadPlainSlice: 2
     FoodCheeseSlice: 1
@@ -2659,7 +2475,7 @@
   name: cotton grilled cheese sandwich recipe
   result: FoodBakedGrilledCheeseSandwichCotton
   time: 10
-  group: Moth  # Reserve edit: Fix recipe categories
+  group: Moth
   solids:
     FoodBreadCottonSlice: 2
     FoodCheeseSlice: 1
@@ -2675,7 +2491,7 @@
     Egg: 12
   solids:
     FoodMeatBacon: 2
-    FoodPotatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodPotato: 1
     FoodBakedPancake: 2
 
 - type: microwaveMealRecipe
@@ -2689,7 +2505,7 @@
   solids:
     FoodMeatBacon: 1
     FoodMeat: 1
-    FoodTomatoSlice: 5  # Reserve edit: Orchid's Garden - Tidy Kitchen
+    FoodTomato: 1
     FoodSoybeans: 2 # replace these with green beans once those become a thing
 
 - type: microwaveMealRecipe
@@ -2710,7 +2526,7 @@
   name: cotton cake recipe
   result: FoodCakeCotton
   time: 5
-  group: Moth  # Reserve edit: Fix recipe categories
+  group: Moth
   reagents:
     Fiber: 10
   solids:
