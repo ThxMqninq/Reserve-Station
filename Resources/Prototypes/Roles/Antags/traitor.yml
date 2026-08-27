@@ -10,6 +10,11 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
+  # Reserve - antag UI
+  category: Solo
+  icon:
+    sprite: _Funkystation/Interface/Lobby/AntagCards.rsi
+    state: sleeperagent
 
 - type: antag
   id: TraitorSleeper
@@ -21,6 +26,11 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
+  # Reserve - antag UI
+  category: Solo
+  icon:
+    sprite: _Funkystation/Interface/Lobby/AntagCards.rsi
+    state: sleeperagent
 
 # Syndicate Operative Outfit - Monkey
 - type: startingGear

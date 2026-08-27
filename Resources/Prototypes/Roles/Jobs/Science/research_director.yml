@@ -47,6 +47,7 @@
   id: ResearchDirectorGear
   equipment:
     id: RnDPDA
+    eyes: ClothingEyesGlassesDiagnosticCommand # Reserve-CommandHUD
     ears: ClothingHeadsetAltScience # Goobstation
   storage:
     back:

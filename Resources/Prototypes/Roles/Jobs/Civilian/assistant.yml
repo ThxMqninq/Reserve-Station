@@ -18,6 +18,15 @@
       factions:
       - NanoTrasen
       - Assistant
+  - !type:PlaytimeDegrade # MisandryBox - tider main syndrome
+    since: 600
+    until: 24600
+    disarmMalus: true
+  alternateTitles: # Reserve - alternate titles
+  - AssistantPassenger
+  - AssistantVisitor
+  - AssistantEntrepreneur
+  - AssistantOffDuty
 
 - type: startingGear
   id: PassengerGear
@@ -38,3 +47,19 @@
     neck: ClothingNeckMantle
     outerClothing: ClothingOuterWinterCoat
     gloves: ClothingHandsGlovesColorYellowBudget
+
+- type: jobAlternateTitle
+  id: AssistantPassenger
+  name: job-name-alt-assistant-1
+
+- type: jobAlternateTitle
+  id: AssistantVisitor
+  name: job-name-alt-assistant-2
+
+- type: jobAlternateTitle
+  id: AssistantEntrepreneur
+  name: job-name-alt-assistant-3
+
+- type: jobAlternateTitle
+  id: AssistantOffDuty
+  name: job-name-alt-assistant-4

@@ -20,6 +20,7 @@
   - CaptainEnvirosuit
   - CaptainEnvirogloves
   - CaptainGloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -41,6 +42,7 @@
   - HoPEnvirosuit
   - HoPEnvirogloves
   - HoPGloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 # Silicons
 - type: roleLoadout
   id: JobBorg
@@ -74,6 +76,7 @@
   - AssistantEnvirohelm
   - AssistantEnvirosuit
   - AssistantEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobBartender
@@ -93,6 +96,7 @@
   - BartenderEnvirohelm
   - BartenderEnvirosuit
   - BartenderEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -110,6 +114,7 @@
   - ServiceWorkerEnvirohelm
   - ServiceWorkerEnvirosuit
   - ServiceWorkerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobChef
@@ -120,6 +125,7 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
+  - ChefGloves  # Reserve edit: Orchid's Barmania - Service Heaven
   - Glasses
   - Survival
   - Trinkets
@@ -130,6 +136,7 @@
   - ChefEnvirohelm
   - ChefEnvirosuit
   - ChefEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobLibrarian
@@ -147,6 +154,7 @@
   - LibrarianEnvirohelm
   - LibrarianEnvirosuit
   - LibrarianEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobLawyer
@@ -165,6 +173,7 @@
   - LawyerEnvirohelm
   - LawyerEnvirosuit
   - LawyerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobChaplain
@@ -187,6 +196,7 @@
   - ChaplainEnvirohelm
   - ChaplainEnvirosuit
   - ChaplainEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobJanitor
@@ -207,16 +217,19 @@
   - JanitorEnvirohelm
   - JanitorEnvirosuit
   - JanitorEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobBotanist
   groups:
   - GroupTankHarness
   - BotanistHead
+  - BotanistGoggles  # Reserve edit: Orchid's Barmania - Service Heaven
+  - BotanistMasks  # Reserve edit: Orchid's Barmania - Service Heaven
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
-  - Glasses
+  - BotanistGloves  # Reserve edit: Orchid's Barmania - Service Heaven
   - Survival
   - Trinkets
   - BotanistJobTrinkets
@@ -226,6 +239,7 @@
   - BotanistEnvirohelm
   - BotanistEnvirosuit
   - BotanistEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobClown
@@ -246,6 +260,7 @@
   - ClownEnvirohelm
   - ClownEnvirosuit
   - ClownEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobMime
@@ -269,6 +284,7 @@
   - MimeEnvirohelm
   - MimeEnvirosuit
   - MimeEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 
 - type: roleLoadout
@@ -290,6 +306,7 @@
   - MusicianEnvirohelm
   - MusicianEnvirosuit
   - MusicianEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Cargo
 - type: roleLoadout
@@ -312,6 +329,7 @@
   - QuartermasterEnvirohelm
   - QuartermasterEnvirosuit
   - QuartermasterEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -333,6 +351,7 @@
   - CargoTechnicianEnvirohelm
   - CargoTechnicianEnvirosuit
   - CargoTechnicianEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobSalvageSpecialist
@@ -353,6 +372,7 @@
   - SalvageEnvirohelm
   - SalvageEnvirosuit
   - SalvageEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Engineering
 - type: roleLoadout
@@ -374,6 +394,7 @@
   - ChiefEngineerEnvirohelm
   - ChiefEngineerEnvirosuit
   - ChiefEngineerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -390,6 +411,7 @@
   - TechnicalAssistantEnvirohelm
   - TechnicalAssistantEnvirosuit
   - TechnicalAssistantEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -410,6 +432,7 @@
   - StationEngineerEnvirohelm
   - StationEngineerEnvirosuit
   - StationEngineerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -429,6 +452,7 @@
   - AtmosEnvirohelm
   - AtmosEnvirosuit
   - AtmosEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Science
 - type: roleLoadout
@@ -452,6 +476,7 @@
   - ResearchDirectorEnvirosuit
   - ResearchDirectorEnvirohelm
   - ResearchDirectorEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobScientist
@@ -475,6 +500,7 @@
   - ScientistEnvirohelm
   - ScientistEnvirosuit
   - ScientistEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -492,6 +518,7 @@
   - ResearchAssistantEnvirohelm
   - ResearchAssistantEnvirosuit
   - ResearchAssistantEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Security
 - type: roleLoadout
@@ -516,6 +543,7 @@
   - HeadofSecurityEnvirosuit
   - HeadofSecurityEnvirogloves
   - HeadofSecurityGloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobWarden
@@ -538,6 +566,7 @@
   - WardenEnvirohelm
   - WardenEnvirosuit
   - WardenEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -561,6 +590,7 @@
   - SecurityOfficerEnvirohelm
   - SecurityOfficerEnvirosuit
   - SecurityOfficerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobDetective
@@ -581,6 +611,7 @@
   - DetectiveEnvirosuit
   - DetectiveEnvirogloves
   - DetectiveGloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -599,6 +630,7 @@
   - SecurityCadetEnvirohelm
   - SecurityCadetEnvirosuit
   - SecurityCadetEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Medical
 - type: roleLoadout
@@ -613,7 +645,7 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
- # - MedicalEyewear #Goobstation - Spawns with medichem hud
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - ChiefMedicalOfficerJobTrinkets
@@ -623,6 +655,7 @@
   - ChiefMedicalOfficerEnvirohelm
   - ChiefMedicalOfficerEnvirosuit
   - ChiefMedicalOfficerEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -646,6 +679,7 @@
   - MedicalDoctorEnvirohelm
   - MedicalDoctorEnvirosuit
   - MedicalDoctorEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -663,15 +697,17 @@
   - MedicalInternEnvirohelm
   - MedicalInternEnvirosuit
   - MedicalInternEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobChemist
   groups:
   - GroupTankHarness
   - ChemistHead # Goobstation
-  - MedicalMask
+  - ChemistGoggles  # Reserve edit: Orchid's Barmania - Service Heaven
+  - ChemistMasks  # Reserve edit: Orchid's Barmania - Service Heaven
   - ChemistJumpsuit
-  - MedicalGloves
+  - ChemistGloves  # Reserve edit: Orchid's Barmania - Service Heaven
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
@@ -684,6 +720,7 @@
   - ChemistEnvirohelm
   - ChemistEnvirosuit
   - ChemistEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobParamedic
@@ -706,8 +743,27 @@
   - ParamedicEnvirohelm
   - ParamedicEnvirosuit
   - ParamedicEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # Wildcards
+- type: roleLoadout
+  id: JobZookeeper
+  groups:
+  - ZookeeperHead
+  - ZookeeperJumpsuit
+  - GroupTankHarness
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathTool
+  # Goobstation - EE Plasmeme Change.
+  - ZookeeperEnvirohelm
+  - ZookeeperEnvirosuit
+  - ZookeeperEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
+
 - type: roleLoadout
   id: JobReporter
   groups:
@@ -725,6 +781,7 @@
   - ReporterEnvirohelm
   - ReporterEnvirosuit
   - ReporterEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 - type: roleLoadout
   id: JobPsychologist
@@ -742,6 +799,24 @@
   - PsychologistEnvirohelm
   - PsychologistEnvirosuit
   - PsychologistEnvirogloves
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
+
+- type: roleLoadout
+  id: JobBoxer
+  groups:
+  - GroupTankHarness
+  - BoxerJumpsuit
+  - BoxerGloves
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathTool
+  # Goobstation - EE Plasmeme Change.
+  - BoxerEnvirohelm
+  - BoxerEnvirosuit
+  - UniqueReserveItems  # Reserve edit: Ckey loadout items
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit

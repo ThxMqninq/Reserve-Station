@@ -18,6 +18,10 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay
     prototype: WeaponRevolverInspector
+  alternateTitles: # Reserve - alternate titles
+  - JanitorMaid
+  - JanitorMaintenanceWorker
+  - JanitorCustodialTechnician
 
 - type: startingGear
   id: JanitorGear
@@ -27,6 +31,9 @@
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
     pocket1: KeyRingJanitor # Goobstation
+  storage:
+    back:
+    - DrinkBrepsiCan # Reserve edit
 
 - type: startingGear
   id: JanitorMaidGear
@@ -50,3 +57,15 @@
     neck: ClothingNeckScarfStripedPurple
     outerClothing: ClothingOuterWinterJani
     gloves: ClothingHandsGlovesJanitor
+
+- type: jobAlternateTitle
+  id: JanitorMaid
+  name: job-name-alt-janitor-1
+
+- type: jobAlternateTitle
+  id: JanitorMaintenanceWorker
+  name: job-name-alt-janitor-2
+
+- type: jobAlternateTitle
+  id: JanitorCustodialTechnician
+  name: job-name-alt-janitor-3

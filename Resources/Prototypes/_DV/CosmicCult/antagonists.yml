@@ -8,6 +8,11 @@
   - !type:OverallPlaytimeRequirement
     time: 24h # 24h i really just want people to read the guidebook please please please
   guides: [ CosmicCult ]
+  # Reserve - antag UI
+  category: Team
+  icon:
+    sprite: _Funkystation/Interface/Lobby/AntagCards.rsi
+    state: cosmiccult
 
 - type: antag
   id: CosmicAntagColossus

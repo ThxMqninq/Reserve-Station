@@ -15,14 +15,14 @@
   storage:
     back:
     - ClothingHeadHatFlowerWreath
-  groupBy: "hats" # GoobStation
+  groupBy: "flowers"  # Reserve edit: Better trinket loadout
 
 - type: loadout
   id: Hairflower
   storage:
     back:
     - ClothingHeadHatHairflower
-  groupBy: "hats"  # GoobStation
+  groupBy: "flowers"  # Reserve edit: Better trinket loadout
 
 # Headphones
 - type: loadout
@@ -30,7 +30,7 @@
   storage:
     back:
     - ClothingMultipleHeadphones
-  groupBy: "hats" # GoobStation
+  groupBy: "audio"  # Reserve edit: Better trinket loadout
 
 # Toys
 - type: loadout
@@ -38,14 +38,22 @@
   storage:
     back:
     - PlushieLizard
-  groupBy: "plushies" # GoobStation
+  groupBy: "plushies"  # Reserve edit: Better trinket loadout
 
 - type: loadout
   id: PlushieSpaceLizard
   storage:
     back:
     - PlushieSpaceLizard
-  groupBy: "plushies" # GoobStation
+  groupBy: "plushies"  # Reserve edit: Better trinket loadout
+
+# Reserve
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+  groupBy: "plushies"  # Reserve edit: Better trinket loadout
 
 - type: loadout
   id: ThreeCandles
@@ -55,6 +63,7 @@
     - CandleRed
     - CandleBlue
     - CandleGreenSmall
+  groupBy: "misc"  # Reserve edit: Better trinket loadout
 
 # Smokeables
 - type: loadout
@@ -364,6 +373,7 @@
 
 - type: loadout
   id: FoodSnackLollypopWrapped
+  dummyEntity: FoodSnackLollypop  # Reserve edit: Better trinket loadout
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -376,6 +386,7 @@
 
 - type: loadout
   id: FoodSnackLollypopWrappedRainbow
+  dummyEntity: FoodSnackLollypopRainbow  # Reserve edit: Better trinket loadout
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -388,6 +399,7 @@
 
 - type: loadout
   id: FoodSnackLollypopWrappedCarp
+  dummyEntity: FoodSnackLollypopCarp  # Reserve edit: Better trinket loadout
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:

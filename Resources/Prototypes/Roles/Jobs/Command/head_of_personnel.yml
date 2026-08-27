@@ -80,8 +80,9 @@
     id: HoPPDA
     #gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
+    eyes: ClothingEyesGlassesCommand # Reserve-CommandHUD
     belt: BoxFolderClipboardThreePapers
-    eyes: ClothingEyesHudCommand
+    # eyes: ClothingEyesHudCommand  # Reserve-CommandHUD
   storage:
     back:
     - Flash

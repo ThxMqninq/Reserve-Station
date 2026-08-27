@@ -232,6 +232,14 @@
       head:
       - state: equipped-HELMET
         shader: unshaded
+  # Reserve edit start: Better Recycling
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+      Plasma: 100
+  - type: StaticPrice
+    price: 50
+  # Reserve edit end: Better Recycling
 
 - type: entity
   parent: BasePlushie
@@ -465,6 +473,14 @@
       right:
       - state: rainbowlizardplush-inhand-right
         shader: unshaded
+  # Reserve edit start: Better Recycling
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+      Plasma: 100
+  - type: StaticPrice
+    price: 50
+  # Reserve edit end: Better Recycling
 
 - type: entity
   parent: PlushieLizard
@@ -866,6 +882,14 @@
       right:
       - state: rainbowcarpplush-inhand-right
         shader: unshaded
+  # Reserve edit start: Better Recycling
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+      Plasma: 100
+  - type: StaticPrice
+    price: 50
+  # Reserve edit end: Better Recycling
 
 - type: entity
   parent: PlushieCarp

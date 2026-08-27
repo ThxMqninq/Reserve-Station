@@ -24,6 +24,10 @@
       soulOwnedNotDevil: true # This just means they won't suffer the effects of being condemned, while still not being able to sell their soul. - Goobstation
     - type: CanEnchant #GoobStation
     - type: CurseImmune # Immune to curses of wraith plaguebringer - Goobstation
+  alternateTitles: # Reserve - alternate titles
+  - ChaplainPreacher
+  - ChaplainSpiritualAdvisor
+  - ChaplainShrineGuardian
 
 - type: startingGear
   id: ChaplainGear
@@ -49,3 +53,15 @@
     neck: ClothingNeckStoleChaplain
     outerClothing: ClothingOuterPlagueSuit
     gloves: ClothingHandsGlovesColorBlack
+
+- type: jobAlternateTitle
+  id: ChaplainPreacher
+  name: job-name-alt-chaplain-1
+
+- type: jobAlternateTitle
+  id: ChaplainSpiritualAdvisor
+  name: job-name-alt-chaplain-2
+
+- type: jobAlternateTitle
+  id: ChaplainShrineGuardian
+  name: job-name-alt-chaplain-3
