@@ -22,12 +22,14 @@ public sealed class GhostInventorySystem : EntitySystem
     {
         base.Initialize();
 
+        // Reserve: GhostComponent+PlayerAttachedEvent занят GhostCosmeticsSystem
+        SubscribeLocalEvent<ActorComponent, PlayerAttachedEvent>(OnGhostPlayerAttached);
         SubscribeLocalEvent<GhostComponent, GhostInventoryActionEvent>(OnGhostInventoryAction);
     }
 
-    private void OnGhostPlayerAttached(EntityUid uid, GhostComponent _, PlayerAttachedEvent args)
+    private void OnGhostPlayerAttached(EntityUid uid, ActorComponent _, PlayerAttachedEvent args)
     {
-        if (!_lenaApi.IsIntegrationEnabled)
+        if (!HasComp<GhostComponent>(uid) || !_lenaApi.IsIntegrationEnabled)
             return;
 
         EntityUid? actionEntity = null;

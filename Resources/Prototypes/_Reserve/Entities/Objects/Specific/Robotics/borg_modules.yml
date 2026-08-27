@@ -12,8 +12,7 @@
           sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       hands:
-      - item: FireAxe
-      - item: BorgFireAxe
+      - item: BorgFireAxe # Reserve
     - type: BorgModuleIcon
       icon: { sprite: _Reserve/Interface/Actions/actions_borg.rsi, state: fireaxe-module }
 
@@ -30,7 +29,6 @@
         sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       hands:
-      - item: FlamingAxe
-      - item: BorgFireAxeFlaming
+      - item: BorgFireAxeFlaming # Reserve
     - type: BorgModuleIcon
       icon: { sprite: _Reserve/Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }

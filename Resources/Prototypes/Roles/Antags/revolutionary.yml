@@ -11,7 +11,6 @@
   - !type:DepartmentTimeRequirement # was  - !type:OverallPlaytimeRequirement, Goob change
       department: Command
       time: 10h # Goobstation
-  guides: [ Revolutionaries ]
   # Reserve - antag UI
   category: Team
   icon:

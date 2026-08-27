@@ -4,7 +4,7 @@
   id: DefaultMapPool
   maps:
   - Atlas
-  #- Amber kil by upstream we still have ours but it testfails oh well.
+  - Amber
   - Bagel
   - Box
   - Cluster
@@ -21,11 +21,13 @@
   #- Train # Goobstation - all my friends hate train
   - FlandHighPop
   - OasisHighPop
-  - Barratry # Goobstation - Re-add barratry
+  # - Barratry  # Goobstation - Re-add barratry # Reserve - NOBODY LOVES BARRATRY
   - Kettle # Goobstation - Re-add kettle (before it was gemini!)
   - Leonid # Goobstation - for goob by goob
   - Delta # Goobstation - ported from Corvax
   - Chloris # Goobstation - also Corvax because we love goidamaps
+  - ReserveReach  # Reserve: Reach port
+  - ReserveSillyIsland  # Reserve: SillyIsland port
   - Cog # those who forget to clear their multitool
   - Serpentcrest # Goobstation when contra
   #- Plasma # Goob - No. Leave it to the mappers.

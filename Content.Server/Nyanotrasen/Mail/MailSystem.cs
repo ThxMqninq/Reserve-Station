@@ -23,6 +23,7 @@ using Content.Shared.Access.Systems;
 using Content.Shared.Access;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
+using Content.Shared.Delivery; // Reserve
 using Content.Shared.DoAfter; // Reserve edit: mail-fix #328
 using Content.Shared.Kitchen.Components; // Reserve edit: mail-fix #328
 using Content.Shared.Mail;
@@ -184,7 +185,7 @@ namespace Content.Server.Mail
 
             // The priority tape is visually considered to be a part of the
             // anti-tamper lock, so remove that too.
-            _appearanceSystem.SetData(uid, MailVisuals.IsPriority, false);
+            _appearanceSystem.SetData(uid, DeliveryVisuals.PriorityState, DeliveryPriorityState.Off); // Reserve
 
             // The examination code depends on this being false to not show
             // the priority tape description anymore.
@@ -320,7 +321,7 @@ namespace Content.Server.Mail
             component.IsProfitable = false;
 
             if (component.IsPriority)
-                _appearanceSystem.SetData(uid, MailVisuals.IsPriorityInactive, true);
+                _appearanceSystem.SetData(uid, DeliveryVisuals.PriorityState, DeliveryPriorityState.Inactive); // Reserve
 
             var query = EntityQueryEnumerator<StationBankAccountComponent>();
             while (query.MoveNext(out var station, out var account))
@@ -372,7 +373,7 @@ namespace Content.Server.Mail
 
         private void OnBreak(EntityUid uid, MailComponent component, BreakageEventArgs args)
         {
-            _appearanceSystem.SetData(uid, MailVisuals.IsBroken, true);
+            _appearanceSystem.SetData(uid, DeliveryVisuals.IsBroken, true); // Reserve
 
             if (component.IsFragile)
             {
@@ -483,7 +484,7 @@ namespace Content.Server.Mail
             }
 
             if (component.IsFragile)
-                _appearanceSystem.SetData(uid, MailVisuals.IsFragile, true);
+                _appearanceSystem.SetData(uid, DeliveryVisuals.IsFragile, true); // Reserve
         }
         // Reserve edit end: mail-fix #328
 
@@ -611,14 +612,14 @@ namespace Content.Server.Mail
             {
                 mailComp.Bounty += component.FragileBonus;
                 mailComp.Penalty += component.FragileMalus;
-                _appearanceSystem.SetData(uid, MailVisuals.IsFragile, true);
+                _appearanceSystem.SetData(uid, DeliveryVisuals.IsFragile, true); // Reserve
             }
 
             if (mailComp.IsPriority)
             {
                 mailComp.Bounty += component.PriorityBonus;
                 mailComp.Penalty += component.PriorityMalus;
-                _appearanceSystem.SetData(uid, MailVisuals.IsPriority, true);
+                _appearanceSystem.SetData(uid, DeliveryVisuals.PriorityState, DeliveryPriorityState.Active); // Reserve
 
                 mailComp.PriorityCancelToken = new CancellationTokenSource();
 
@@ -638,7 +639,7 @@ namespace Content.Server.Mail
                     mailComp.PriorityCancelToken.Token);
             }
 
-            _appearanceSystem.SetData(uid, MailVisuals.JobIcon, recipient.JobIcon);
+            _appearanceSystem.SetData(uid, DeliveryVisuals.JobIcon, recipient.JobIcon); // Reserve
 
             _metaDataSystem.SetEntityName(uid, Loc.GetString(mailEntityStrings.NameAddressed, // Frontier: move constant to MailEntityString
                 ("recipient", recipient.Name)));
@@ -869,12 +870,12 @@ namespace Content.Server.Mail
 
         private void UpdateAntiTamperVisuals(EntityUid uid, bool isLocked)
         {
-            _appearanceSystem.SetData(uid, MailVisuals.IsLocked, isLocked);
+            _appearanceSystem.SetData(uid, DeliveryVisuals.IsLocked, isLocked); // Reserve
         }
 
         private void UpdateMailTrashState(EntityUid uid, bool isTrash)
         {
-            _appearanceSystem.SetData(uid, MailVisuals.IsTrash, isTrash);
+            _appearanceSystem.SetData(uid, DeliveryVisuals.IsTrash, isTrash); // Reserve
         }
 
         // DeltaV - Helper function that executes for each StationLogisticsStatsComponent

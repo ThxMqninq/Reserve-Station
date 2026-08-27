@@ -3,10 +3,13 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
+using Content.Server.Discord; // Reserve edit
 using Content.Server.Discord.DiscordLink;
+using Content.Server.MoMMI;
 using Content.Server.Players.RateLimiting;
 using Content.Server.Preferences.Managers;
 using Content.Shared.Administration;
@@ -21,6 +24,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Server._RMC14.LinkAccount; // RMC - Patreon
+using Content.Server._Reserve.LenaApi; // Reserve
+using Content.Shared._Reserve.LenaApi; // Reserve edit - naplak kutosa
 
 namespace Content.Server.Chat.Managers;
 
@@ -39,6 +44,7 @@ internal sealed partial class ChatManager : IChatManager
 
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
+    [Dependency] private readonly IMoMMILink _mommiLink = default!;
     [Dependency] private readonly IAdminManager _adminManager = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
@@ -50,6 +56,8 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private readonly DiscordChatLink _discordLink = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
     [Dependency] private readonly LinkAccountManager _linkAccount = default!; // RMC - Patreon
+    [Dependency] private readonly DiscordWebhook _discord = default!; // Reserve edit
+    [Dependency] private readonly LenaApiManager _lenaApiManager = default!; // Reserve
 
     private ISawmill _sawmill = default!;
 
@@ -60,6 +68,7 @@ internal sealed partial class ChatManager : IChatManager
 
     private bool _oocEnabled = true;
     private bool _adminOocEnabled = true;
+    private bool _donorsOocEnabled = true; // Reserve ooc-discord
 
     private readonly Dictionary<NetUserId, ChatUser> _players = new();
 
@@ -70,6 +79,9 @@ internal sealed partial class ChatManager : IChatManager
 
         _configurationManager.OnValueChanged(CCVars.OocEnabled, OnOocEnabledChanged, true);
         _configurationManager.OnValueChanged(CCVars.AdminOocEnabled, OnAdminOocEnabledChanged, true);
+        _configurationManager.OnValueChanged(LenaApiCVars.DoocEnabled,
+            OnDoocEnabledChanged,
+            true); // Reserve ooc-discord
 
         _sawmill = _logManager.GetSawmill("SERVER");
 
@@ -90,6 +102,17 @@ internal sealed partial class ChatManager : IChatManager
 
         _adminOocEnabled = val;
         DispatchServerAnnouncement(Loc.GetString(val ? "chat-manager-admin-ooc-chat-enabled-message" : "chat-manager-admin-ooc-chat-disabled-message"));
+    }
+
+    private void OnDoocEnabledChanged(bool val) // Reserve ooc-discord
+    {
+        if (_donorsOocEnabled == val)
+            return;
+
+        _donorsOocEnabled = val;
+        DispatchServerAnnouncement(Loc.GetString(val
+            ? "reserve-chat-manager-dooc-chat-enabled-message"
+            : "reserve-chat-manager-dooc-chat-disabled-message"));
     }
 
     public void DeleteMessagesBy(NetUserId uid)
@@ -260,6 +283,8 @@ internal sealed partial class ChatManager : IChatManager
 
     private void SendOOC(ICommonSession player, string message)
     {
+        var lenaUser = _lenaApiManager.GetUser(player.UserId);
+
         if (_adminManager.IsAdmin(player))
         {
             if (!_adminOocEnabled)
@@ -267,9 +292,13 @@ internal sealed partial class ChatManager : IChatManager
                 return;
             }
         }
-        else if (!_oocEnabled)
+        else // Reserve ooc-discord
         {
-            return;
+            if (!_oocEnabled)
+            {
+                if (!_donorsOocEnabled || !(lenaUser?.HasActiveSub(out _) ?? false))
+                    return;
+            }
         }
 
         Color? colorOverride = null;
@@ -300,10 +329,60 @@ internal sealed partial class ChatManager : IChatManager
             }
         }
 
+        // Reserve-LenaApi-Start
+        if (!_adminManager.IsAdmin(player) &&
+            lenaUser is { CurrentSubTier: > 0, UsernameColor: not null } &&
+            lenaUser.HasActiveSub(out _))
+        {
+            var subName = _lenaApiManager.GetSubLevelName(lenaUser.CurrentSubTier);
+
+            if (_configurationManager.GetCVar(LenaApiCVars.IgnoreSubName) && !string.IsNullOrEmpty(subName))
+            {
+                wrappedMessage = Loc.GetString("reserve-chat-manager-send-ooc-with-sub-unknown",
+                    ("patronColor", lenaUser.UsernameColor.Value.ToHex()),
+                    ("playerName", player.Name),
+                    ("message", FormattedMessage.EscapeText(message)));
+            }
+            else
+            {
+                wrappedMessage = Loc.GetString("reserve-chat-manager-send-ooc-with-sub",
+                    ("subName", subName ?? string.Empty),
+                    ("patronColor", lenaUser.UsernameColor.Value.ToHex()),
+                    ("playerName", player.Name),
+                    ("message", FormattedMessage.EscapeText(message)));
+            }
+        }
+        // Reserve-LenaApi-End
+
         //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);
         _discordLink.SendMessage(message, player.Name, ChatChannel.OOC);
+        _mommiLink.SendOOCMessage(player.Name,
+            message.Replace("@", "\\@")
+                .Replace("<", "\\<")
+                .Replace("/", "\\/"));
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"OOC from {player:Player}: {message}");
+
+        // Reserve ooc-discord start
+        if (!string.IsNullOrEmpty(_configurationManager.GetCVar(CCVars.DiscordOOCChatWebhook)))
+        {
+            var webhookUrl = _configurationManager.GetCVar(CCVars.DiscordOOCChatWebhook);
+            var playerName = player.Name;
+
+            _ = Task.Run(async () =>
+            {
+                if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
+                    return;
+
+                var payload = new WebhookPayload
+                {
+                    Content = $"`{playerName}`: {message}"
+                };
+
+                await _discord.CreateMessage(webhookData.ToIdentifier(), payload);
+            });
+        }
+        // Reserve ooc-discord end
     }
 
     private void SendAdminChat(ICommonSession player, string message)
@@ -335,6 +414,26 @@ internal sealed partial class ChatManager : IChatManager
 
         _discordLink.SendMessage(message, player.Name, ChatChannel.AdminChat);
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
+
+        if (!string.IsNullOrEmpty(_configurationManager.GetCVar(CCVars.DiscordAdminchatWebhook)))
+        {
+            var webhookUrl = _configurationManager.GetCVar(CCVars.DiscordAdminchatWebhook);
+            var playerName = player.Name;
+            var adminTitle = _adminManager.GetAdminData(player)?.Title ?? "Admin";
+
+            _ = Task.Run(async () =>
+            {
+                if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
+                    return;
+
+                var payload = new WebhookPayload
+                {
+                    Content = $"{playerName} [{adminTitle}]:\n{message}" //Reserve edit
+                };
+
+                await _discord.CreateMessage(webhookData.ToIdentifier(), payload);
+            });
+        }
     }
 
     #endregion

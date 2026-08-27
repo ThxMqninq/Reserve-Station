@@ -416,6 +416,11 @@
 # Towels
 - type: loadout
   id: TowelColorWhite
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 10h # Reserve
   storage:
     back:
     - TowelColorWhite

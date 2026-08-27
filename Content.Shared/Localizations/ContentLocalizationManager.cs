@@ -15,7 +15,7 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         private const string FallbackCultureName = "en-US";
-        private const string ForkDefaultCultureName = "ru-RU";
+        private const string ForkDefaultCultureName = "ru-RU"; // Reserve-Localization
 
         private CultureInfo _culture = CultureInfo.GetCultureInfo(ForkDefaultCultureName, predefinedOnly: false);
 
@@ -43,6 +43,8 @@ namespace Content.Shared.Localizations
 
             if (!_culture.NameEquals(cultureEn))
                 _loc.SetFallbackCluture(cultureEn);
+
+            AddSharedFunctions(cultureEn); // Reserve - fallback FTL (en-US guidebook) needs the same functions
 
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
@@ -142,8 +144,8 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} and {list[1]}",
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, and {list[^1]}"
+                2 => $"{list[0]} и {list[1]}", // reserve edit, and -> и
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, и {list[^1]}" // reserve edit, and -> и
             };
         }
 
@@ -156,8 +158,8 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} or {list[1]}",
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, or {list[^1]}"
+                2 => $"{list[0]} или {list[1]}", // reserve edit, or -> или
+                _ => $"{string.Join(" или ", list)}" // reserve edit, or -> или
             };
         }
 
