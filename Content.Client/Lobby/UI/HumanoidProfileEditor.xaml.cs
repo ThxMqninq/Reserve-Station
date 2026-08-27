@@ -711,7 +711,7 @@ namespace Content.Client.Lobby.UI
                 string categoryName;
                 if (categoryId == "Default")
                 {
-                    categoryName = "Uncategorized";
+                    categoryName = Loc.GetString("lobby-antag-default-category-name");
                 }
                 else if (_prototypeManager.TryIndex<AntagCategoryPrototype>(categoryId, out var categoryProto))
                 {

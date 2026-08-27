@@ -8,12 +8,12 @@ changelog-new-changes = новые обновления
 changelog-version-tag = версия v{ $version }
 changelog-button = Обновления
 changelog-button-new-entries = Обновления (!)
-changelog-tab-title-Changelog = Список изменений
-changelog-tab-title-Admin = Админское
-changelog-tab-title-Reservelog = Reserve
-changelog-tab-title-ReserveChangelog = Reserve
 
+changelog-tab-title-Changelog = Базовое
+changelog-tab-title-Admin = Админское
+changelog-tab-title-Reservelog = Резерв
 changelog-tab-title-Maps = Карты
+changelog-tab-title-Rules = Правила
 
 changelog-version-unknown = Неизвестная версия
 

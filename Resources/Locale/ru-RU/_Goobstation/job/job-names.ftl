@@ -1,7 +1,8 @@
 job-name-futureagent = Агент будущего
 job-name-salvagediver = Утилизатор-десантинк
 job-name-ntr = Представитель Nanotrasen
-job-name-bs = Офицер Синего Щита
+job-name-bs = Агент Синего Щита
+job-name-bso = Офицер Синего Щита
 job-name-overall = Общий
 job-name-tider = Тайдер
 
