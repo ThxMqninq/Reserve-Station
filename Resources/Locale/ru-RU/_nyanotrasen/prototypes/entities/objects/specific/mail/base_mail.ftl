@@ -1,5 +1,9 @@
-ent-BaseMail = посылка
+ent-BaseDelivery = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
-ent-MailAdminFun = { ent-BaseMail }
+ent-PackageDelivery = посылка
+    .desc = { ent-BaseDelivery.desc }
+ent-LetterDelivery = письмо
+    .desc = { ent-BaseDelivery.desc }
+ent-MailAdminFun = { ent-LetterDelivery }
     .suffix = Адмем
-    .desc = { ent-BaseMail.desc }
+    .desc = { ent-LetterDelivery.desc }

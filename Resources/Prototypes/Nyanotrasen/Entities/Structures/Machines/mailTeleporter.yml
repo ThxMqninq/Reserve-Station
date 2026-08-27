@@ -5,6 +5,7 @@
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   name: mail teleporter
   description: Teleports mail addressed to the crew of this station.
+  categories: [ HideSpawnMenu ]
   components:
   - type: MailTeleporter
     radioNotification: true

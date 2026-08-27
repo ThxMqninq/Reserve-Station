@@ -510,7 +510,7 @@
   storage:
     back:
     - PlushieSlime
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieDiona
@@ -522,7 +522,7 @@
   storage:
     back:
     - PlushieDiona
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieVox
@@ -534,7 +534,7 @@
   storage:
     back:
     - PlushieVox
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieHuman
@@ -546,7 +546,7 @@
   storage:
     back:
     - PlushieHuman
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: BasePlushie
@@ -573,7 +573,7 @@
   storage:
     back:
     - PlushieBread
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: BasePlushie
@@ -598,7 +598,7 @@
   storage:
     back:
     - PlushiePiano
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: BasePlushie
@@ -622,7 +622,7 @@
   storage:
     back:
     - PlushieBehonkerEye
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: BasePlushie
@@ -646,7 +646,7 @@
   storage:
     back:
     - PlushieChest
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieAI
@@ -659,7 +659,7 @@
   storage:
     back:
     - ToyAi
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieSharkBlue
@@ -671,7 +671,7 @@
   storage:
     back:
     - PlushieSharkBlue
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieSharkGrey
@@ -683,7 +683,7 @@
   storage:
     back:
     - PlushieSharkGrey
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: loadout
   id: PlushieSharkPink
@@ -695,7 +695,7 @@
   storage:
     back:
     - PlushieSharkPink
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: PlushieSharkGrey
@@ -734,7 +734,7 @@
   storage:
     back:
     - PlushieSharkRainbow
-  groupBy: "plush"
+  groupBy: "plushies"
 
 - type: entity
   parent: PlushieGhost
@@ -772,7 +772,7 @@
   storage:
     back:
     - PlushieGhostRainbow
-  groupBy: "plush"
+  groupBy: "plushies"
 
 # endregion
 
