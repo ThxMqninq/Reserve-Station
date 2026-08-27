@@ -1,8 +1,8 @@
 <!--
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
-
-<Document> <!--Reserve edit start: Fix recipe categories-->
+<!-- Reserve edit start: Fix recipe categories -->
+<Document>
 
 # Microwave Recipes
 
@@ -62,4 +62,5 @@ This is the latest published version of NanoTrasen Central Command Kitchen de Cu
 ## Secret
 <GuideFoodIngredientGroupEmbed Group="Secret"/>
 
-</Document> <!--Reserve edit end: Fix recipe categories-->
+</Document>
+<!-- Reserve edit end: Fix recipe categories -->

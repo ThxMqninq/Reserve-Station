@@ -5,7 +5,7 @@ using Content.Shared.Construction;
 using Content.Shared.Construction.NodeEntities;
 using Content.Shared.Construction.Steps;
 using Content.Shared.Chemistry.Reaction;
-using Content.Goobstation.Shared.EntityEffects;
+using Content.Shared.EntityEffects.Effects.EntitySpawning;
 using Content.Shared.Kitchen;
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.Prototypes;
@@ -180,10 +180,11 @@ public sealed class FoodGuideDataSystem : EntitySystem
         {
             foreach (var effect in reaction.Effects)
             {
-                if (effect is not CreateRQuantityEntityReactionEffect createEffect)
+                // Reserve edit: CreateEntityReactionEffect renamed to SpawnEntity upstream
+                if (effect is not SpawnEntity spawnEffect)
                     continue;
 
-                AddSource(createEffect.Entity, new FoodEntitySource(FoodEntitySourceKind.MixingReaction, reaction, null, null));
+                AddSource(spawnEffect.Entity, new FoodEntitySource(FoodEntitySourceKind.MixingReaction, reaction, null, null));
             }
         }
 

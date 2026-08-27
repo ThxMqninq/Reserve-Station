@@ -3,6 +3,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Client.Chemistry.EntitySystems;
+using Content.Client.Guidebook;
 using Content.Client.Guidebook.Richtext;
 using Content.Client.Message;
 using Content.Client.UserInterface.ControlExtensions;
@@ -27,7 +28,7 @@ namespace Content.Client.Guidebook.Controls;
 ///     Control for embedding a reagent into a guidebook.
 /// </summary>
 [UsedImplicitly, GenerateTypedNameReferences]
-public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl
+public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl, IGuidebookEntryAnchor // Reserve edit: guide-book #320
 {
     [Dependency] private readonly IEntitySystemManager _systemManager = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -37,6 +38,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
     private readonly ContrabandSystem _contraband;
 
     public IPrototype? RepresentedPrototype { get; private set; }
+    public IPrototype? AnchorPrototype => RepresentedPrototype; // Reserve edit: guide-book #320
 
     public GuideReagentEmbed()
     {

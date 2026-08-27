@@ -2,6 +2,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Client.Guidebook;
 using Content.Client.Guidebook.Richtext;
 using Content.Client.Message;
 using Content.Client.UserInterface.ControlExtensions;
@@ -21,7 +22,7 @@ namespace Content.Client.Guidebook.Controls;
 /// Control for embedding a microwave recipe into a guidebook.
 /// </summary>
 [UsedImplicitly, GenerateTypedNameReferences]
-public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl
+public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl, IGuidebookEntryAnchor // Reserve edit: guide-book #320
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
@@ -29,6 +30,7 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
     private ISawmill _sawmill = default!;
 
     public IPrototype? RepresentedPrototype { get; private set; }
+    public IPrototype? AnchorPrototype => RepresentedPrototype; // Reserve edit: guide-book #320
 
     public GuideMicrowaveEmbed()
     {
@@ -86,7 +88,7 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
 
         RepresentedPrototype = entity;
 
-        IconContainer.AddChild(new GuideEntityEmbed(recipe.Result, false, false));
+        IconContainer.AddChild(new GuideEntityEmbed(recipe.Result, false, false, registerAsGuideAnchor: false)); // Reserve edit: guide-book #320
         ResultName.SetMarkup(entity.Name);
         ResultDescription.SetMarkup(entity.Description);
     }
@@ -97,17 +99,17 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         {
             var ingredient = _prototype.Index<EntityPrototype>(product);
 
-            IngredientsGrid.AddChild(new GuideEntityEmbed(product, false, false));
-
-            // solid name
+            IngredientsGrid.AddChild(new GuideEntityEmbed(product, false, false, registerAsGuideAnchor: false)); // Reserve edit: guide-book #320
 
             var solidNameMsg = new FormattedMessage();
             solidNameMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-solid-name-display", ("ingredient", ingredient.Name)));
             solidNameMsg.Pop();
 
-            var solidNameLabel = new GuidebookRichPrototypeLink();
+            // Reserve edit start: guide-book #320
+            var solidNameLabel = new GuidebookCrossRefLabel();
             solidNameLabel.SetMessage(solidNameMsg);
-            solidNameLabel.LinkedPrototype = ingredient;
+            solidNameLabel.TargetPrototype = ingredient;
+            // Reserve edit end: guide-book #320
 
             IngredientsGrid.AddChild(solidNameLabel);
 
@@ -136,10 +138,12 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
             liquidColorMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-reagent-color-display", ("color", reagent.SubstanceColor)));
             liquidColorMsg.Pop();
 
-            var liquidColorLabel = new GuidebookRichPrototypeLink();
+            // Reserve edit start: guide-book #320
+            var liquidColorLabel = new GuidebookCrossRefLabel();
             liquidColorLabel.SetMessage(liquidColorMsg);
             liquidColorLabel.HorizontalAlignment = Control.HAlignment.Center;
-            liquidColorLabel.LinkedPrototype = reagent;
+            liquidColorLabel.TargetPrototype = reagent;
+            // Reserve edit end: guide-book #320
 
             IngredientsGrid.AddChild(liquidColorLabel);
 
