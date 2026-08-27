@@ -15,14 +15,14 @@
   storage:
     back:
     - ClothingHeadHatFlowerWreath
-  groupBy: "flowers"  # Reserve edit: Better trinket loadout
+  groupBy: "hats"  # Reserve edit: Better trinket loadout
 
 - type: loadout
   id: Hairflower
   storage:
     back:
     - ClothingHeadHatHairflower
-  groupBy: "flowers"  # Reserve edit: Better trinket loadout
+  groupBy: "hats"  # Reserve edit: Better trinket loadout
 
 # Headphones
 - type: loadout
