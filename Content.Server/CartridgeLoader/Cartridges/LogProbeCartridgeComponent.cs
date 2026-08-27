@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.CartridgeLoader.Cartridges;
-﻿using Content.Shared.Paper;
+using Content.Shared.Paper;
 using Content.Shared._DV.CartridgeLoader.Cartridges; // DeltaV
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;

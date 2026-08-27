@@ -95,8 +95,8 @@ namespace Content.Shared.Localizations
         private ILocValue FormatNaturalPercent(LocArgs args)
         {
             var number = ((LocValueNumber) args.Args[0]).Value * 100;
-            var maxDecimals = (int)Math.Floor(((LocValueNumber) args.Args[1]).Value);
-            var formatter = (NumberFormatInfo)NumberFormatInfo.GetInstance(_culture).Clone();
+            var maxDecimals = (int) Math.Floor(((LocValueNumber) args.Args[1]).Value);
+            var formatter = (NumberFormatInfo) NumberFormatInfo.GetInstance(_culture).Clone();
             formatter.NumberDecimalDigits = maxDecimals;
             return new LocValueString(string.Format(formatter, "{0:N}", number).TrimEnd('0').TrimEnd(char.Parse(formatter.NumberDecimalSeparator)) + "%");
         }
@@ -104,8 +104,8 @@ namespace Content.Shared.Localizations
         private ILocValue FormatNaturalFixed(LocArgs args)
         {
             var number = ((LocValueNumber) args.Args[0]).Value;
-            var maxDecimals = (int)Math.Floor(((LocValueNumber) args.Args[1]).Value);
-            var formatter = (NumberFormatInfo)NumberFormatInfo.GetInstance(_culture).Clone();
+            var maxDecimals = (int) Math.Floor(((LocValueNumber) args.Args[1]).Value);
+            var formatter = (NumberFormatInfo) NumberFormatInfo.GetInstance(_culture).Clone();
             formatter.NumberDecimalDigits = maxDecimals;
             return new LocValueString(string.Format(formatter, "{0:N}", number).TrimEnd('0').TrimEnd(char.Parse(formatter.NumberDecimalSeparator)));
         }
@@ -158,7 +158,7 @@ namespace Content.Shared.Localizations
                 <= 0 => string.Empty,
                 1 => list[0],
                 2 => $"{list[0]} или {list[1]}", // reserve edit, or -> или
-                _ => $"{string.Join(" или ", list)}" // reserve edit, or -> или
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, или {list[^1]}" // reserve edit, or -> или
             };
         }
 
@@ -176,7 +176,7 @@ namespace Content.Shared.Localizations
         public static string FormatPlaytime(TimeSpan time)
         {
             time = TimeSpan.FromMinutes(Math.Ceiling(time.TotalMinutes));
-            var hours = (int)time.TotalHours;
+            var hours = (int) time.TotalHours;
             var minutes = time.Minutes;
             return Loc.GetString($"zzzz-fmt-playtime", ("hours", hours), ("minutes", minutes));
         }

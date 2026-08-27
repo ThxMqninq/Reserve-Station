@@ -2,7 +2,7 @@
 
 using Content.Shared.Abilities;
 using Content.Shared.Actions;
-﻿using Content.Shared.Actions.Components;
+using Content.Shared.Actions.Components;
 using Content.Shared.RatKing.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
