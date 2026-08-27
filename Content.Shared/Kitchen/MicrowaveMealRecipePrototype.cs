@@ -36,7 +36,7 @@ namespace Content.Shared.Kitchen
         [DataField("time")]
         public uint CookTime { get; private set; } = 5;
 
-        public string Name => Loc.GetString(_name);
+        public string Name => Loc.TryGetString(_name, out var name) ? name : _name; // Reserve
 
         // TODO Turn this into a ReagentQuantity[]
         public IReadOnlyDictionary<string, FixedPoint2> IngredientsReagents => _ingsReagents;

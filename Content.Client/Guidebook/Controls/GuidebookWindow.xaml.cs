@@ -458,6 +458,7 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IG
                 if (entry.Children.Count > 0)
                 {
                     var sortedChildren = entry.Children
+                        .Where(_entries.ContainsKey)
                         .Select(childId => _entries[childId])
                         .OrderBy(childEntry => childEntry.Priority)
                         .ThenBy(childEntry => Loc.GetString(childEntry.Name))

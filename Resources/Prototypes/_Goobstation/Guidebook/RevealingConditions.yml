@@ -2,7 +2,7 @@
 
 - type: guideEntry
   id: Conditions
-  name: "Antag Revealing Conditions"
+  name: guide-entry-antag-revealing-conditions # Reserve
   priority: 60
   text: "/ServerInfo/_Goobstation/Guidebook/Antagonist/MetaReveal.xml"
   localizedText:
