@@ -166,3 +166,5 @@
   name: guide-entry-lawsets
   text: "/ServerInfo/Guidebook/ReferenceTables/Lawsets.xml"
   filterEnabled: True
+  localizedText: # Reserve
+    ru-RU: "/ServerInfo/_Reserve/Guidebook/ReferenceTables/Lawsets.xml"

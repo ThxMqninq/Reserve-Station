@@ -74,3 +74,5 @@
   id: Xenoborgs
   name: guide-entry-xenoborgs
   text: "/ServerInfo/Guidebook/Antagonist/Xenoborgs.xml"
+  localizedText: # Reserve
+    ru-RU: "/ServerInfo/_Reserve/Guidebook/Antagonist/Xenoborgs.xml"

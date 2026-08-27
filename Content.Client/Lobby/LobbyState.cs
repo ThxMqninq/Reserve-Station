@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Client._Moffstation.ReadyManifest;
 using Content.Client._RMC14.LinkAccount;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
@@ -80,6 +81,7 @@ namespace Content.Client.Lobby
             Lobby.CharacterPreview.PatronPerks.OnPressed += OnPatronPerksPressed;
             Lobby.ReadyButton.OnPressed += OnReadyPressed;
             Lobby.ReadyButton.OnToggled += OnReadyToggled;
+            Lobby.ManifestButton.OnPressed += OnManifestPressed; // Moffstation - Ready Manifest
 
             _gameTicker.InfoBlobUpdated += UpdateLobbyUi;
             _gameTicker.LobbyStatusUpdated += LobbyStatusUpdated;
@@ -104,6 +106,7 @@ namespace Content.Client.Lobby
             Lobby.CharacterPreview.PatronPerks.OnPressed -= OnPatronPerksPressed;
             Lobby!.ReadyButton.OnPressed -= OnReadyPressed;
             Lobby!.ReadyButton.OnToggled -= OnReadyToggled;
+            Lobby.ManifestButton.OnPressed -= OnManifestPressed; // Moffstation - Ready Manifest
 
             Lobby = null;
         }
@@ -138,6 +141,11 @@ namespace Content.Client.Lobby
         private void OnReadyToggled(BaseButton.ButtonToggledEventArgs args)
         {
             SetReady(args.Pressed);
+        }
+
+        private void OnManifestPressed(BaseButton.ButtonEventArgs args)
+        {
+            _entityManager.System<ReadyManifestSystem>().RequestReadyManifest();
         }
 
         public override void FrameUpdate(FrameEventArgs e)
