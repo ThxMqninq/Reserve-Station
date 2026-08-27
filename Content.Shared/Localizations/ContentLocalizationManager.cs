@@ -46,9 +46,6 @@ namespace Content.Shared.Localizations
 
             AddSharedFunctions(cultureEn); // Reserve - fallback FTL (en-US guidebook) needs the same functions
 
-            _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
-            _loc.AddFunction(cultureEn, "MANY", FormatMany);
-
             _cfg.OnValueChanged(CVars.LocCultureName, OnCultureChanged);
         }
 
@@ -64,6 +61,8 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(culture, "NATURALFIXED", FormatNaturalFixed);
             _loc.AddFunction(culture, "NATURALPERCENT", FormatNaturalPercent);
             _loc.AddFunction(culture, "PLAYTIME", FormatPlaytime);
+            _loc.AddFunction(culture, "MAKEPLURAL", FormatMakePlural); // Reserve
+            _loc.AddFunction(culture, "MANY", FormatMany); // Reserve
         }
 
         private void OnCultureChanged(string code)
