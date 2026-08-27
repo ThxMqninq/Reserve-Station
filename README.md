@@ -8,10 +8,8 @@
 
 **Резерв** - это русскоязычный форк [Goob Station](https://github.com/Goob-Station/Goob-Station), который, в свою очередь, является форком Space Station 14.
 
-Space Station 14 - это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
+**Space Station 14** - это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 Больше про текущую сборку Robust Toolbox, используемую Reserve Station, можно узнать в [Robust Toolbox README](/RobustToolbox/README.md).
-
-Поскольку это хард-форк, любой код, взятый из другого апстрима, не может быть напрямую замержен сюда, а должен быть перенесен.
 
 ## Сборка
 
@@ -42,6 +40,14 @@ Space Station 14 - это ремейк SS13, который работает н�
 ### MacOS
 
 > Предположительно, также, как и на Линуксе.
+
+## Внесение вклада
+
+> [!IMPORTANT]
+> Подробную информацию о том, как внести вклад в проект, можно найти в [CONTRIBUTING.md](CONTRIBUTING.md).
+
+> [!CAUTION]
+> Сообщайте нам о любых проблемах безопасности через [SECURITY.md](SECURITY.md).
 
 ## Лицензия
 

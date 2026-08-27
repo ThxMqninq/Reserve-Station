@@ -1,12 +1,11 @@
-# Space Station 14 Contributing Guidelines
+# Внесение вклада в Reserve Station
 
-Thanks for contributing to Space Station 14.
-When contributing, be sure to follow our [codebase conventions](https://docs.spacestation14.com/en/general-development/codebase-info/codebase-organization.html) and [PR guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
+Спасибо за ваш вклад в Reserve Station.
+При внесении вклада обязательно следуйте нашим [кодовым соглашениям](https://docs.spacestation14.com/en/general-development/codebase-info/codebase-organization.html) и [руководству по PR](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
 
-Following these guidelines helps us increase review turnaround time, so be sure to review the linked documents in full.
+> [!IMPORTANT]
+> Поскольку это **хард-форк**, любой код, взятый из другого апстрима, не может быть напрямую замержен сюда, а должен быть перенесен.
 
-The last major guidelines update was on **December 6th, 2025**.
+## Зачем это здесь?
 
-## Why is this here?
-
-We put this here so that GitHub will notify you when submitting a pull request that the PR guidelines have changed, if you haven't read the latest version.
+Мы разместили это здесь, чтобы GitHub уведомлял вас при создании пулл-реквеста о том, что руководство по их созданию изменилось, если вы не прочитали последнюю версию.
