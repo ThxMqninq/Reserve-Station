@@ -52,6 +52,17 @@ public sealed class PanelSheetlet<T> : Sheetlet<T> where T : PalettedStylesheet,
                 .Class(StyleClass.BackgroundPanelOpenRight)
                 .Prop(PanelContainer.StylePropertyPanel, StyleBoxHelpers.OpenRightStyleBox(sheet))
                 .Modulate(sheet.SecondaryPalette.Background),
+            E()
+                .Class(StyleClass.BackgroundPanelIcon)
+                .Prop(PanelContainer.StylePropertyPanel, IconStyleBox(sheet))
+                .Modulate(sheet.SecondaryPalette.Background),
         ];
+    }
+
+    private static StyleBoxTexture IconStyleBox(T sheet)
+    {
+        var iconBox = new StyleBoxTexture(StyleBoxHelpers.BaseStyleBox(sheet));
+        iconBox.SetContentMarginOverride(StyleBox.Margin.All, 10);
+        return iconBox;
     }
 }

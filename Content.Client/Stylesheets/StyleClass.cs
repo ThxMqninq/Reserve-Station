@@ -47,6 +47,7 @@ public static class StyleClass
     public const string BackgroundPanel = "BackgroundPanel"; // replaces `AngleRect`
     public const string BackgroundPanelOpenLeft = "BackgroundPanelOpenLeft"; // replaces `BackgroundOpenLeft`
     public const string BackgroundPanelOpenRight = "BackgroundPanelOpenRight"; // replaces `BackgroundOpenRight`
+    public const string BackgroundPanelIcon = "BackgroundPanelIcon";
 
     public const string PanelDark = "PanelDark";
     public const string PanelLight = "PanelLight";
