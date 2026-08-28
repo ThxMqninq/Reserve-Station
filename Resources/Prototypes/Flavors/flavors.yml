@@ -1481,6 +1481,11 @@
   description: flavor-complex-bacchus-blessing
 
 - type: flavor
+  id: brepsi
+  flavorType: Complex
+  description: flavor-complex-brepsi
+
+- type: flavor
   id: trashy
   flavorType: Base
   description: flavor-base-trashy
