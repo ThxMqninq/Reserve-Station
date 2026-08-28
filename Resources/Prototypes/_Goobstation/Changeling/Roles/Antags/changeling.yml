@@ -15,3 +15,8 @@
     - IPC
     - Plasmaman
   guides: [ Changelings ]
+  # Reserve - antag UI
+  category: Solo
+  icon:
+    sprite: Interface/Actions/changeling.rsi
+    state: armblade

@@ -9,6 +9,11 @@
     role: JobBorg
     time: 18000  # 5 hrs
   guides: [ Xenoborgs ]
+  # Reserve - antag UI
+  category: Team
+  icon:
+    sprite: Mobs/Silicon/mothership_core.rsi
+    state: core-idle
 
 - type: antag
   id: Xenoborg
@@ -21,3 +26,8 @@
     role: JobBorg
     time: 18000  # 5 hrs
   guides: [ Xenoborgs ]
+  # Reserve - antag UI
+  category: Team
+  icon:
+    sprite: Mobs/Silicon/mothership_core.rsi
+    state: core-idle

@@ -10,3 +10,8 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 5h # 5h # Goobstation-RoleTime
+  # Reserve - antag UI
+  category: Team
+  icon:
+    sprite: _Goobstation/Blob/Mobs/blob.rsi
+    state: blob_core_overlay

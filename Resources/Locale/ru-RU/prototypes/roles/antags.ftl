@@ -59,3 +59,9 @@ roles-antag-thief-objective = Вы — преступный отброс, кле
 
 roles-antag-dragon-name = Космический дракон
 roles-antag-dragon-objective = Создайте армию карпов для захвата квадранта.
+
+roles-antag-mothership-core-name = Материнский корабль
+roles-antag-mothership-core-objective = Используйте своих ксеноборгов чтобы создать еще больше ксеноборгов.
+
+roles-antag-xenoborg-name = Ксеноборг
+roles-antag-xenoborg-objective = Помогайте материнскому кораблю создавать еще больше ксеноборгов.
