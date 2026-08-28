@@ -16,7 +16,7 @@
     materialComposition:
       Steel: 100
   - type: ReactionMixer
-    mixOnInteract: false
+    mixerType: None
     reactionTypes:
     - Shake
     - Stir

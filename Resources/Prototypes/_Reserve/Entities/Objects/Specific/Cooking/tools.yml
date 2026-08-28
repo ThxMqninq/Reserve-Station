@@ -35,6 +35,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 6
     fillBaseName: fill-
+    inHandsMaxFillLevels: 0
 
 - type: entity
   parent: [DrinkKettleAdvanced, BaseCivilianContraband]
