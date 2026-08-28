@@ -268,7 +268,7 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             Resizable = true,
             MinWidth = 1050,
             MinHeight = 550,
-            SetWidth = 1050,
+            SetWidth = 1250, // Reserve edit: Better character editor UI
             SetHeight = 700
         };
 

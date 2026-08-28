@@ -220,7 +220,7 @@ public sealed partial class RequirementsSelector : BoxContainer
         return new Button
         {
             Text = text,
-            MinWidth = 60,
+            MinWidth = 40, // Reserve edit: New Jobs Style
             HorizontalExpand = false,
         };
     }

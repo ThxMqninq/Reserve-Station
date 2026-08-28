@@ -159,14 +159,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 <BoxContainer Orientation="Vertical">
                     <!-- Jobs -->
                     <OptionButton Name="PreferenceUnavailableButton" />
-                    <ScrollContainer VerticalExpand="True">
-                        <BoxContainer Name="JobList" Orientation="Vertical" />
+                    <ScrollContainer VerticalExpand="True" HorizontalExpand="True" HScrollEnabled="False"> <!-- Reserve edit: New Jobs Style -->
+                        <BoxContainer Name="JobList" Orientation="Vertical" HorizontalExpand="True" />
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical" Margin="10" HorizontalExpand="False">
                     <!-- Antags -->
-                    <ScrollContainer VerticalExpand="True" RectClipContent="True">
-                        <BoxContainer Name="AntagList" Orientation="Vertical" />
+                    <ScrollContainer VerticalExpand="True" RectClipContent="True" HorizontalExpand="True" HScrollEnabled="False"> <!-- Reserve edit: New Antagonist Cards -->
+                        <BoxContainer Name="AntagList" Orientation="Vertical" HorizontalExpand="True" />
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical" Margin="10">

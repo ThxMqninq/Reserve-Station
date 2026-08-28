@@ -764,7 +764,7 @@ namespace Content.Client.Lobby.UI
                 // Fixed GridContainer for cards
                 var grid = new GridContainer
                 {
-                    Columns = 3,
+                    Columns = 2, // Reserve edit: New Antagonist Cards
                     HorizontalExpand = true,
                     Margin = new Thickness(0, 0, 0, 10)
                 };
@@ -805,7 +805,7 @@ namespace Content.Client.Lobby.UI
                         Pressed = isEnabled,
                         VerticalAlignment = VAlignment.Center,
                         HorizontalExpand = true,
-                        MinWidth = 80
+                        MinWidth = 40 // Reserve edit: New Antagonist Cards
                     };
                     toggleButton.OnToggled += args =>
                     {
@@ -1121,7 +1121,7 @@ namespace Content.Client.Lobby.UI
                         }
                     }
 
-                    selector.Setup(items, job.LocalizedName, 280, job.LocalizedDescription, icon, job.Guides, altTitleInfo, currentAlt, _prototypeManager, Profile?.Gender);
+                    selector.Setup(items, job.LocalizedName, 248, job.LocalizedDescription, icon, job.Guides, altTitleInfo, currentAlt, _prototypeManager, Profile?.Gender); // Reserve edit: New Jobs Style
 
                     if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter, out var reason))
                     {

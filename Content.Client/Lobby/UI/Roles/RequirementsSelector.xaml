@@ -8,9 +8,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
               RectClipContent="True">
 
     <Control Name="TitleContent"
-             Margin="5 0"
+             Margin="5 0 -15 0"
              MaxWidth="600"
-             RectClipContent="True" />
+             RectClipContent="True" /> <!-- Reserve edit: New Jobs Style -->
 
     <Control HorizontalExpand="True" />
 

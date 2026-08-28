@@ -12,7 +12,8 @@ marking-slot-add = Добавить
 marking-slot-remove = Удалить
 marking-slot = Слот { $number }
 marking-forced-colors = Данная черта имеет предустановленные цвета и не может быть изменена.
-marking-select-to-customize = Выберите черту на правой панели, чтобы настроить её цвет.
+marking-select-to-customize = Выберите черту на правой панели,
+    чтобы настроить её цвет.
 marking-customize-colors = Окрас
 
 # Categories

@@ -69,6 +69,7 @@ gs-balanceui-shop-buy-token-antag-desc = Allows you become any antag. (Excluding
 gs-balanceui-shop-buy-token-admin-abuse-desc = Allows you to request an admin to abuse their powers against you. Admins are encouraged to go wild.
 gs-balanceui-shop-buy-token-hat-desc = An admin will give you a random hat.
 
+gs-balanceui-admin-add-title = Admin panel
 gs-balanceui-admin-add-label = Add (or subtract) money:
 gs-balanceui-admin-add-player = Player name
 gs-balanceui-admin-add-value = Value
