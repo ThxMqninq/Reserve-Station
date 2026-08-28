@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-using Content.Goobstation.Common.Barks; // Goob Station - Barks
+// using Content.Goobstation.Common.Barks; // Goob Station - Barks // Reserve edit - use the other barks
+using Content.Shared._White.Bark; // Reserve edit - use the other barks
 using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -35,8 +36,13 @@ public sealed partial class HumanoidAppearanceComponent : Component
     [DataField, AutoNetworkedField]
     public int Age = 18;
 
+    /* Reserve edit - use the other barks
     [DataField] // Goob Station - Barks
     public ProtoId<BarkPrototype> BarkVoice { get; set; } = SharedHumanoidAppearanceSystem.DefaultBarkVoice; // Goob Station - Barks
+    */
+
+    [DataField] // Reserve edit - use the other barks
+    public ProtoId<BarkVoicePrototype> BarkVoice { get; set; } = SharedHumanoidAppearanceSystem.DefaultBarkVoice; // Reserve edit - use the other barks
 
     /// <summary>
     ///     Any custom base layers this humanoid might have. See:
