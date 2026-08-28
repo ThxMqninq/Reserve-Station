@@ -5,20 +5,22 @@
   id: Hydroponics
   name: research-technology-basic-hydroponics
   icon:
-    sprite: Structures/Machines/seed_extractor.rsi
-    state: seedextractor
+    sprite: _Reserve/Objects/Specific/Hydroponics/plant_analyzer.rsi  # Reserve edit: Orchid's Barmania - Service Heaven
+    state: icon
   discipline: CivilianServices
   tier: 1
   cost: 7500 # Delta Price. 5000 is pre-adjustment.
   recipeUnlocks:
-  - PlantBagOfHolding #DeltaV
+  # - PlantBagOfHolding #DeltaV  # Reserve edit: Orchid's Barmania - Service Heaven - moved to BluespaceHydroponics
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
   - ReagentGrinderIndustrialMachineCircuitboard
+  - PlantAnalyzer # Reserve add
+  - WateringCan  # Reserve edit: Orchid's Barmania - Service Heaven
   # Goobstation R&D Console rework start
-  position: -3,4
+  position: -1,8  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
-  - AdvancedEntertainment
+  - BasicRobotics  # Reserve edit: Orchid's Barmania - Service Heaven
   # Goobstation R&D Console rework end
 
 - type: technology
@@ -104,9 +106,9 @@
   - BiofabricatorMachineCircuitboard
   - BiomassReclaimerMachineCircuitboard
   # Goobstation R&D Console rework start
-  position: -3,5
+  position: 1,8  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
-  - Hydroponics
+  - Cooking  # Reserve edit: Orchid's Barmania - Service Heaven
   # Goobstation R&D Console rework end
 
 # Tier 2
@@ -133,7 +135,7 @@
   - FauxTileAstroIronsand
   - FauxTileAstroIronsandBorderless
   # Goobstation R&D Console rework start
-  position: 1,5
+  position: 1,6  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
   - AudioVisualCommunication
   # Goobstation R&D Console rework end
@@ -175,7 +177,7 @@
   - BorgModuleAdvancedSurgery # Shitmed - does it make sense to have it before advanced surg? Don't know, but this spices up medborgs.
   - AdvancedJetInjector
   # Goobstation R&D Console rework start
-  position: -2, 4
+  position: -2, 5  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
@@ -195,8 +197,9 @@
   - AdvMopItem
   - MegaSprayBottle
   - BorgModuleAdvancedCleaning
+  - WashingMachineCircuitboard  # Reserve - clothing stains
   # Goobstation R&D Console rework start
-  position: -1,4
+  position: -2,6  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
@@ -225,7 +228,7 @@
   position: 0,6
   technologyPrerequisites:
   - PushHorn
-  - RipleyAPLU
+  # - RipleyAPLU  # Reserve edit: Orchid's Barmania - Service Heaven: RipleyAPLU is already required for CritterMechs, which is required for PushHorn.
   # Goobstation R&D Console rework end
 
 - type: technology
@@ -241,7 +244,7 @@
   - WeaponSprayNozzle
   - ClothingBackpackWaterTank
   # Goobstation R&D Console rework start
-  position: -1,6
+  position: -3,6  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
   - AdvancedCleaning
   # Goobstation R&D Console rework end
@@ -258,7 +261,7 @@
   recipeUnlocks:
   - CargoTelepadMachineCircuitboard
   # Goobstation R&D Console rework start
-  position: 1,8
+  position: 1,7  # Reserve edit: Orchid's Barmania - Service Heaven
   technologyPrerequisites:
   - MeatManipulation
   - FauxAstroTiles
@@ -282,22 +285,22 @@
   - CritterMechs
   # Goobstation R&D Console rework end
 
-- type: technology  # Goobstation
-  id: ServiceBluespaceChemistry
-  name: research-technology-service-energy-chem
-  icon:
-    sprite: _Goobstation/Structures/Machines/service_dispenser.rsi
-    state: industrial
-  discipline: CivilianServices
-  tier: 3
-  cost: 7500
-  recipeUnlocks:
-  - ServiceEnergyChemMachineCircuitboard
-  position: -4,7
-  technologyPrerequisites:
-  - MeatManipulation
-
-
+# Reserve edit: Orchid's Barmania - Service Heaven: Merged to AdvancedCooking
+# - type: technology  # Goobstation
+#   id: ServiceBluespaceChemistry
+#   name: research-technology-service-energy-chem
+#   icon:
+#     sprite: _Goobstation/Structures/Machines/service_dispenser.rsi
+#     state: industrial
+#   discipline: CivilianServices
+#   tier: 3
+#   cost: 7500
+#   recipeUnlocks:
+#   - ServiceEnergyChemMachineCircuitboard
+#   position: -4,7
+#   technologyPrerequisites:
+#   - MeatManipulation
+# Reserve edit end: Orchid's Barmania - Service Heaven
 
 # Tier 3
 
@@ -333,7 +336,7 @@
   - SyringeBluespace
   - MedkitCombat # Goobstation - remove medkitcombat from static to research
   - VialBluespace # goob edit - bluespace vials
-  - DrinkShakerBluespace # goob
+  # - DrinkShakerBluespace # goob  # Reserve edit: Make shakers distinct
   - EnergyChemDispenserMachineCircuitboard #Goob
   # Goobstation R&D Console rework start
   position: 4,5

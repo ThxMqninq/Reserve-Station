@@ -98,6 +98,8 @@
       - id: FlashlightLantern
       - id: Plunger
       - id: WireBrush
+      - id: FlatpackWashingMachine # Reserve - clothing stains
+        amount: 2
 
 - type: entity
   id: ClosetLegalFilled
@@ -137,6 +139,7 @@
     - id: ChemistryBottleRobustHarvest
       prob: 0.3
     - id: ClothingBeltPlant
+    - id: PlantAnalyzer # Reserve
     - id: PlantBag ##Some maps don't have nutrivend
     - id: BoxMouthSwab
     - id: Dropper

@@ -53,33 +53,25 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         walkSpeedModifier: 1.35
         sprintSpeedModifier: 1.35
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 10
-        type: Add
-        refresh: true
       - !type:GenericStatusEffect
         key: PressureImmunity
         component: PressureImmunity
         time: 10
-        type: Add
-        refresh: true
       - !type:GenericStatusEffect
         key: RadiationProtection
         component: RadiationProtection
         time: 10
-        type: Add
-        refresh: true
       - !type:GenericStatusEffect
         key: StaminaModifier
         component: StaminaModifier
         time: 10
-        type: Add
-        refresh: true
       - !type:EyeDamage
         conditions:
         - !type:ReagentThresholdCondition
@@ -227,7 +219,7 @@
           max: 1
         clear: False
         time: 10
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
         - !type:ReagentThresholdCondition
           reagent: RoyalHyperphase

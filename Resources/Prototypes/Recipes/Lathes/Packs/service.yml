@@ -37,8 +37,12 @@
   - MicrowaveMachineCircuitboard
   - ReagentGrinderMachineCircuitboard
   - ElectricGrillMachineCircuitboard
-  - BoozeDispenserMachineCircuitboard
-  - SodaDispenserMachineCircuitboard
+  # Reserve start: Orchid's Barmania - Service Heaven
+  # - BoozeDispenserMachineCircuitboard
+  # - SodaDispenserMachineCircuitboard
+  # - SauceDispenserMachineCircuitboard  # Reserve: Orchid's Barmania - Vendichaos
+  # Reserve end: Orchid's Barmania - Service Heaven
+  - PrinterDocMachineCircuitboard # Corvax-Printer
   - SmartFridgeCircuitboard
 
 ## Dynamic
@@ -69,3 +73,13 @@
   - JukeboxCircuitBoard
   - DawInstrumentMachineCircuitboard
   - SheetifierMachineCircuitboard # Goobstation - Moved from ScienceBoards
+  # Reserve edit start: Orchid's Barmania - Service Heaven
+  - BoozeDispenserMachineCircuitboard
+  - SodaDispenserMachineCircuitboard
+  - SauceDispenserMachineCircuitboard
+  - EnergyBoozeDispenserMachineCircuitboard
+  - EnergyDrinkDispenserMachineCircuitboard
+  - EnergySodaDispenserMachineCircuitboard
+  - EnergySauceDispenserMachineCircuitboard
+  # Reserve edit end: Orchid's Barmania - Service Heaven
+  - WashingMachineCircuitboard  # Reserve - clothing stains

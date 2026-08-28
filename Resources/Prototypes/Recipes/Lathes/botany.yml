@@ -38,3 +38,13 @@
   parent: BaseHydroToolRecipe
   id: HydroponicsToolClippers
   result: HydroponicsToolClippers
+
+# Reserve-Start
+- type: latheRecipe
+  parent: BaseHydroToolRecipe
+  id: PlantAnalyzer
+  result: PlantAnalyzer
+  materials:
+    Steel: 300
+    Plastic: 200
+# Reserve-End

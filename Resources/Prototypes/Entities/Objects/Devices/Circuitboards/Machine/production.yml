@@ -1404,6 +1404,7 @@
         Manipulator: 4
 # Shitmed Change End
 
+# Reserve start - clothing stains
 - type: entity
   parent: BaseMachineCircuitboard
   id: WashingMachineCircuitboard
@@ -1415,3 +1416,4 @@
       Steel: 1
       Manipulator: 1
       Cable: 1
+# Reserve end - clothing stains

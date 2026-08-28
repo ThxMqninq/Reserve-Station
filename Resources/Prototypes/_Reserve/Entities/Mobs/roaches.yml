@@ -25,7 +25,10 @@
       coefficients:
         Radiation: 0.3
   - type: Bloodstream
-    bloodReagent: InsectBlood
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: InsectBlood
+        Quantity: 40
   - type: Respirator
     damage:
       types:

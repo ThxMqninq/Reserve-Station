@@ -40,7 +40,6 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
-        refresh: false
       - !type:SatiateHunger
         factor: -6
       - !type:MovespeedModifier
@@ -55,7 +54,7 @@
         - !type:ReagentThresholdCondition
           min: 15
         probability: 0.5
-        paralyzeTime: 4
+        time: 4
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThresholdCondition
