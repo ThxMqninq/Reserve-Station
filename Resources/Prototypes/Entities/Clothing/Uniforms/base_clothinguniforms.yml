@@ -45,6 +45,26 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 30
+      stain: # Reserve - clothing stains
+        maxVol: 5
+  # Reserve start - clothing stains
+  - type: Appearance
+  - type: Stainable # Reserve
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Gabystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Gabystation/Effects/blood.rsi
+      state: uniformbloodicon
+  # Reserve end - clothing stains
   - type: Tag
     tags:
     - ClothMade
@@ -60,6 +80,23 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  # Reserve start - clothing stains
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Gabystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Gabystation/Effects/blood.rsi
+      state: uniformbloodicon
+  # Reserve end - clothing stains
 
 
 - type: entity
@@ -107,3 +144,20 @@
     foldVerbText: fold-verb-clothing-jacket
   - type: FoldableClothing
     foldedEquippedPrefix: folded
+  # Reserve start - clothing stains
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Gabystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Gabystation/Effects/blood.rsi
+      state: uniformbloodicon
+  # Reserve end - clothing stains
