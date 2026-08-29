@@ -34,7 +34,6 @@
   - type: StaticPrice
     price: 500
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 50
   - type: BatteryAmmoProvider
     proto: BulletSpike

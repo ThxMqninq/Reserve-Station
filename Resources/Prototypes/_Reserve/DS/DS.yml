@@ -279,15 +279,17 @@
     maxItemSize: Normal
     grid:
     - 0,0,2,3
-  - type: StorageFill
-    contents:
-      - id: FoodSnackNutribrick
-      - id: FoodSnackMREBrownie
-      - id: FoodTinMRE
-      - id: FoodSnackEnergy
-      - id: DrinkMREFlask
-      - id: DrinkIcedTeaCan
-      - id: DrinkEnergyDrinkCan
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FoodSnackNutribrick
+        - id: FoodSnackMREBrownie
+        - id: FoodTinMRE
+        - id: FoodSnackEnergy
+        - id: DrinkMREFlask
+        - id: DrinkIcedTeaCan
+        - id: DrinkEnergyDrinkCan
 
 #ПРОТОКОЛ
 - type: entity

@@ -42,7 +42,7 @@
         time: 5
       - !type:SatiateHunger
         factor: -6
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         walkSpeedModifier: 0.6
         sprintSpeedModifier: 0.6
         conditions:

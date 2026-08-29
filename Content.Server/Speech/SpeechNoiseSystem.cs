@@ -25,14 +25,14 @@ namespace Content.Server.Speech
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-        private bool _barksEnabled; // Goob
+        // private bool _barksEnabled; // Goob // Commented - Reserve - use the other barks
 
         public override void Initialize()
         {
             base.Initialize();
 
             SubscribeLocalEvent<SpeechComponent, EntitySpokeEvent>(OnEntitySpoke);
-            // Subs.CVar(_cfg, GoobCVars.BarksEnabled, x => _barksEnabled = x, true); // Goob // Commented - Reserve
+            // Subs.CVar(_cfg, GoobCVars.BarksEnabled, x => _barksEnabled = x, true); // Goob // Commented - Reserve - use the other barks
         }
 
         public SoundSpecifier? GetSpeechSound(Entity<SpeechComponent> ent, string message)
