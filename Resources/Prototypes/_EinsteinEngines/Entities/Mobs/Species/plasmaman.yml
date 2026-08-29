@@ -175,8 +175,8 @@
   - type: TemperatureSpeed
     thresholds:
       243: 0.8
-  - type: Fart
-    gasToFart: Plasma
+  # - type: Fart  # Reserve edit - remove farts
+  #   gasToFart: Plasma
 
 - type: entity
   parent: BaseSpeciesDummy

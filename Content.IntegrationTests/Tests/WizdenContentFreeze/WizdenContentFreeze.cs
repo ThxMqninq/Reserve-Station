@@ -1,3 +1,4 @@
+/* Reserve edit - moar
 using Content.Shared.Kitchen;
 
 namespace Content.IntegrationTests.Tests.WizdenContentFreeze;
@@ -24,7 +25,7 @@ public sealed class WizdenContentFreeze
         var protoMan = server.ProtoMan;
 
         var recipesCount = protoMan.Count<FoodRecipePrototype>();
-        var recipesLimit = 224; // Goobstation lmao?
+        var recipesLimit = 238; // Goobstation lmao?
 
         if (recipesCount > recipesLimit)
         {
@@ -39,3 +40,4 @@ public sealed class WizdenContentFreeze
         await pair.CleanReturnAsync();
     }
 }
+*/

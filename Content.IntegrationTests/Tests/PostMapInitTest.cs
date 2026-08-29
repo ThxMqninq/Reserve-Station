@@ -97,7 +97,8 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Goobstation/Shuttles/retort_medical.yml",
             "/Maps/_Goobstation/Shuttles/retort_engineering.yml",
             "/Maps/_Goobstation/Shuttles/retort_janitorial.yml",
-            "/Maps/_Goobstation/Shuttles/retort_cburn.yml"
+            "/Maps/_Goobstation/Shuttles/retort_cburn.yml",
+            "/Maps/_CorvaxNext/Nonstations/vox.yml" //Reserve edit - Vox raiders port
         };
 
         /// <summary>
@@ -112,10 +113,11 @@ namespace Content.IntegrationTests.Tests
             // Goobstation edit:
             // order this list alphabetically, mark dev maps
             // if upstreaming take ours here and edit manually.
-            //"Amber", kill
+            "Amber",
             "Atlas",
             "Bagel",
             "Barratry",
+            "BattleRoyale",   // Reserve Station
             "Box",            // Not in pool
             "CentComm",       // CentComm
             "Chloris",
@@ -144,6 +146,8 @@ namespace Content.IntegrationTests.Tests
             "OriginHighPop",  // Not in pool
             "Packed",
             "Reach",
+            "ReserveReach",       // Reserve Station
+            "ReserveSillyIsland", // Reserve Station
             "Saltern",
             "Serpentcrest",
             "Snowball",
@@ -155,7 +159,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMapsInCurrentPool = // plus dev
         {
             // order this list alphabetically, mark dev maps
-              //"Amber", kill
+              "Amber",
               "Atlas",
               "Bagel",
              //  "Barratry", kill memory concerns
@@ -188,7 +192,8 @@ namespace Content.IntegrationTests.Tests
               "TestTeg",        //Dev map
             //"Train",          //Not in pool
               "Packed",
-              "Reach",
+              "ReserveReach",   // Reserve Station
+              "ReserveSillyIsland", // Reserve Station
               "Saltern",
               "Serpentcrest",
              // "Snowball", // fuck off not in pool
@@ -337,7 +342,8 @@ namespace Content.IntegrationTests.Tests
                 // testing that maps have nothing with the DoNotMap entity category
                 // I do it here because it's basically copy-paste code for the most part
                 var yamlEntities = root["entities"];
-                if (!protoManager.TryIndex<EntityCategoryPrototype>("DoNotMap", out var dnmCategory))
+                var doNotMapCategory = "DoNotMap";
+                if (!protoManager.TryIndex<EntityCategoryPrototype>(doNotMapCategory, out var dnmCategory))
                     return;
                 foreach (var yamlEntity in (YamlSequenceNode) yamlEntities)
                 {
@@ -407,7 +413,7 @@ namespace Content.IntegrationTests.Tests
             HashSet<EntProtoId> unusedExemptions = DoNotMapWhitelistSpecific.TryGetValue(map.ToString(), out var exemptions) ? new(exemptions) : [];
             Assert.Multiple(() =>
             {
-                foreach (var yamlEntity in (YamlSequenceNode)yamlEntities)
+                foreach (var yamlEntity in (YamlSequenceNode) yamlEntities)
                 {
                     var protoId = yamlEntity["proto"].AsString();
 
@@ -594,7 +600,7 @@ namespace Content.IntegrationTests.Tests
 #nullable enable
             while (queryPoint.MoveNext(out T? comp, out var xform))
             {
-                var spawner = (ISpawnPoint)comp;
+                var spawner = (ISpawnPoint) comp;
 
                 if (spawner.SpawnType is not SpawnPointType.LateJoin
                     || xform.GridUid == null

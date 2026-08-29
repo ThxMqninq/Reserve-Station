@@ -999,8 +999,8 @@ DrinkKiraSpecial: DrinkOrangeLimeSodaGlass
 GlowstickBase: GlowstickGreen
 
 # 2025-12-06
-SpawnPointZookeeper: null
-SpawnPointBoxer: null
+# SpawnPointZookeeper: null # Reserve edit - bring them back
+# SpawnPointBoxer: null # Reserve edit - bring them back
 
 # 2025-12-07
 FigureSpawner: MechFigurineSpawner50
@@ -1057,3 +1057,6 @@ CrateFreezer: CrateFreezerFilledRandom
 KitchenKnife: RandomChefTool
 DrinkShaker: RandomBartenderTool
 BoxTrashbag: RandomJanitorTool
+
+# 2026-08-24 Reserve Station edit: Upstream 2408
+PartRodMetalLingering0: null

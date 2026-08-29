@@ -2836,6 +2836,8 @@ entities:
       parent: 2733
     - type: StorageFill
       contents: []
+    - type: EntityTableContainerFill
+      containers: {}
     - type: Storage
       storedItems:
         976:
@@ -3000,6 +3002,8 @@ entities:
       parent: 2
     - type: StorageFill
       contents: []
+    - type: EntityTableContainerFill
+      containers: {}
     - type: Storage
       storedItems:
         2709:
@@ -8905,6 +8909,8 @@ entities:
       parent: 2733
     - type: StorageFill
       contents: []
+    - type: EntityTableContainerFill
+      containers: {}
     - type: Storage
       storedItems:
         2741:

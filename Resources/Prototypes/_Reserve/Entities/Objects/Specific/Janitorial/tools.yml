@@ -90,6 +90,8 @@
           Quantity: 20
   - type: Edible
     solution: food
+  - type: DrainableSolution
+    solution: food
   - type: Residue
     residueAdjective: residue-slippery
     residueColor: residue-green
