@@ -10,7 +10,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     xmlns:tabs="clr-namespace:Content.Client.Administration.UI.Tabs"
     xmlns:playerTab="clr-namespace:Content.Client.Administration.UI.Tabs.PlayerTab"
     xmlns:objectsTab="clr-namespace:Content.Client.Administration.UI.Tabs.ObjectsTab"
-    xmlns:panic="clr-namespace:Content.Client.Administration.UI.Tabs.PanicBunkerTab">
+    xmlns:panic="clr-namespace:Content.Client.Administration.UI.Tabs.PanicBunkerTab"
+    SetSize="680 400"> <!-- Reserve edit: Fix admin menus -->
     <TabContainer Name="MasterTabContainer">
         <adminTab:AdminTab />
         <adminbusTab:AdminbusTab />
