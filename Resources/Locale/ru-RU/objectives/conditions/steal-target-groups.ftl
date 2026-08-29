@@ -60,5 +60,10 @@ steal-target-groups-animal-morty = Морти
 steal-target-groups-animal-renault = Алиса
 steal-target-groups-animal-shiva = Шива
 steal-target-groups-animal-tropico = Тропико
+
 steal-target-groups-clothing-hands-knuckledusters-qm = золотой кастет
 steal-target-groups-weapon-launcher-singularity-buster = уничтожитель сингулярности
+steal-target-groups-weapon-energy-magnum = энергетический магнум
+steal-target-groups-officer-handguns = пистолет службы безопасности
+steal-target-groups-belt-ce = пояс для инструментов старшего инженера
+steal-target-groups-captain-sword = сабля капитана

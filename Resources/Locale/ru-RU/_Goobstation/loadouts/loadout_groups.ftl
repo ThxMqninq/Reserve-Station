@@ -196,6 +196,7 @@ loadout-group-captain-envirohelm = Капитан, экошлем
 loadout-group-captain-envirosuit = Капитан, экокостюм
 loadout-group-captain-envirogloves = Капитан, экоперчатки
 loadout-group-captain-gloves = Капитан, перчатки
+loadout-group-captain-shoes = Капитан, обувь
 loadout-group-captain-mask = Капитан, маска
 # Chemist
 loadout-group-chemist-envirohelm = Химик, экошлем

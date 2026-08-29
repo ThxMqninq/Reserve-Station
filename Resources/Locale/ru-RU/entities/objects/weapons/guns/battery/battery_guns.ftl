@@ -73,3 +73,12 @@ ent-XenoborgLaserGun = лазерная винтовка ксеноборга
     .desc = { ent-WeaponAdvancedLaser.desc }
 ent-XenoborgHeavyLaserGun = тяжёлая лазерная винтовка ксеноборга
     .desc = { ent-WeaponAdvancedLaser.desc }
+
+ent-WeaponEnergyMagnum = энергетический магнум
+    .desc = Мощный самозаряжающийся энергетический пистолет, разработанный для элитных сотрудников службы безопасности. Имеет три режима стрельбы, позволяющие нелетально обезвреживать, стрелять через окна, или наносить высокий урон.
+
+ent-WeaponLaserGunXenoborg = лазерная винтовка ксеноборга
+    .desc = { ent-WeaponAdvancedLaser.desc }
+
+ent-WeaponLaserCannonXenoborg = тяжёлая лазерная пушка ксеноборга
+    .desc = { ent-WeaponLaserCannon.desc }

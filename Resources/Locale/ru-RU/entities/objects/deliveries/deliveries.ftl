@@ -10,3 +10,10 @@ ent-MailAdminFun = { ent-LetterDelivery }
 ent-MailLargeAdminFun = { ent-PackageDelivery }
     .suffix = Адмем
     .desc = { ent-PackageDelivery.desc }
+
+ent-DeliveryModifierPriority = приоритет
+    .desc = Компоненты, которые добавляются приоритетным посылкам.
+ent-DeliveryModifierFragile = хрупкость
+    .desc = Компоненты, которые добавляются хрупким посылкам.
+ent-DeliveryModifierBomb = бомба
+    .desc = Компоненты, добавляемые, когда почта является бомбой.

@@ -36,3 +36,6 @@ ent-ClothingBackpackSatchelHolding = бездонная сумка
     .desc = Сумка, открывающаяся в локальный карман блюспейса.
 ent-ClothingBackpackSatchelAdmin = бездонная сумка администрации
     .desc = Если ты каким-то образом нашел это, то нет, не нашел.
+    .suffix = Адмем
+ent-ClothingBackpackSatchelNinja = сумка клана пауков
+    .desc = Прочная сумка для хранения добычи.
