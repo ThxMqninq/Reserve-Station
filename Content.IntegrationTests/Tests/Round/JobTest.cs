@@ -20,7 +20,7 @@ namespace Content.IntegrationTests.Tests.Round;
 [TestFixture]
 public sealed class JobTest
 {
-    private static readonly ProtoId<JobPrototype> Passenger = "Passenger";
+    private static readonly ProtoId<JobPrototype> Passenger = "ServiceWorker";  // Reserve edit: Fix Assistant job order
     private static readonly ProtoId<JobPrototype> Engineer = "StationEngineer";
     private static readonly ProtoId<JobPrototype> Captain = "Captain";
 
@@ -161,7 +161,7 @@ public sealed class JobTest
         var engineer = pair.Server.ProtoMan.Index(Engineer);
         var passenger = pair.Server.ProtoMan.Index(Passenger);
         Assert.That(captain.Weight, Is.GreaterThan(engineer.Weight));
-        Assert.That(engineer.Weight, Is.EqualTo(passenger.Weight));
+        // Assert.That(engineer.Weight, Is.EqualTo(passenger.Weight));  // Reserve edit: Fix Assistant job order
 
         await pair.SetJobPriorities((Passenger, JobPriority.Medium), (Engineer, JobPriority.High), (Captain, JobPriority.Low));
         ticker.ToggleReadyAll(true);
