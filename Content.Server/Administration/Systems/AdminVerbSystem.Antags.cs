@@ -2,6 +2,7 @@
 
 using Content.Server._Goobstation.Wizard.Components;
 using Content.Server._DV.CosmicCult.Components; // DeltaV
+using Content.Server._Harmony.GameTicking.Rules.Components; // Harmony
 using Content.Server.Antag;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
@@ -37,6 +38,10 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultNinjaRule = "NinjaSpawn";
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
+    // Harmony start
+    private static readonly EntProtoId DefaultConspiratorRule = "Conspirators";
+    private static readonly EntProtoId DefaultBloodBrotherRule = "BloodBrothers";
+    // Harmony end
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -65,7 +70,7 @@ public sealed partial class AdminVerbSystem
                 _antag.ForceMakeAntag<TraitorRuleComponent>(targetPlayer, DefaultTraitorRule);
             },
             Impact = LogImpact.High,
-            Message = string.Join(": ", traitorName,  Loc.GetString("admin-verb-make-traitor")),
+            Message = string.Join(": ", traitorName, Loc.GetString("admin-verb-make-traitor")),
         };
         args.Verbs.Add(traitor);
 
@@ -104,7 +109,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = nukeOpName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Clothing/Head/Hardsuits/syndicate.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Funkystation/Interface/Lobby/AntagCards.rsi"), "nuclearoperative"), // Reserve edit: Fix antag verbs
             Act = () =>
             {
                 _antag.ForceMakeAntag<NukeopsRuleComponent>(targetPlayer, DefaultNukeOpRule);
@@ -222,7 +227,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = hereticName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Goobstation/Heretic/Blades/eldritch_blade.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Funkystation/Interface/Lobby/AntagCards.rsi"), "heretic"), // Reserve edit: Fix antag verbs
             Act = () =>
             {
                 _antag.ForceMakeAntag<HereticRuleComponent>(targetPlayer, "Heretic");
@@ -238,7 +243,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = wizardName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Clothing/Head/Hats/wizardhat.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Funkystation/Interface/Lobby/AntagCards.rsi"), "wizard"), // Reserve edit: Fix antag verbs
             Act = () =>
             {
                 _antag.ForceMakeAntag<WizardRuleComponent>(targetPlayer, "Wizard");
@@ -264,5 +269,36 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(cosmiccult);
         // End DeltaV Additions
+        // Harmony start
+        var conspiratorName = Loc.GetString("admin-verb-text-make-conspirator");
+        Verb conspirator = new()
+        {
+            Text = conspiratorName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Harmony/Interface/Misc/job_icons.rsi"), "Conspirator"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<ConspiratorRuleComponent>(targetPlayer, DefaultConspiratorRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", conspiratorName, Loc.GetString("admin-verb-make-conspirator")),
+        };
+        args.Verbs.Add(conspirator);
+
+        var bloodBrotherName = Loc.GetString("admin-verb-text-make-blood-brother");
+        Verb bloodBrother = new()
+        {
+            Text = bloodBrotherName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Harmony/Interface/Misc/job_icons.rsi"), "BloodBrother"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<BloodBrotherRuleComponent>(targetPlayer, DefaultBloodBrotherRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", bloodBrotherName, Loc.GetString("admin-verb-make-blood-brother")),
+        };
+        args.Verbs.Add(bloodBrother);
+        // Harmony end
     }
 }

@@ -6,7 +6,7 @@ They come in two flavors: [`sh`](sh/) for Linux and Mac, and [`bat`](bat/) for W
 
 ## Building
 
-Run one of these after each change to any `.cs` or `.xaml` files.
+Run one of these after each change to any `.cs` files.
 
 - `buildAllDebug` - Builds all projects with debug configuration
 - `buildAllRelease` - Builds all projects with release configuration

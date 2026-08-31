@@ -87,7 +87,7 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
             AddPlayerButtons(_ghostPlayers, "ghost-teleport-menu-ghosts-label", string.Empty, true); // Ghost
             AddPlayerButtons(_leftPlayers, "ghost-teleport-menu-left-label", string.Empty, true); // Left
             AddPlayerButtons(_deadPlayers, "ghost-teleport-menu-dead-label", string.Empty, true); // Dead
-            AddPlaceButtons(_placeWarps, "ghost-teleport-menu-locations-label", "ButtonColorSpecificDepartment");
+            AddPlaceButtons(_placeWarps, "ghost-teleport-menu-locations-label", "ButtonColorUnknownDepartment");
             // Reserve-End
         }
 

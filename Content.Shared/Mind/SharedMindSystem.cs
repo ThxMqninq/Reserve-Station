@@ -57,6 +57,7 @@ public abstract partial class SharedMindSystem : EntitySystem
         SubscribeLocalEvent<MindContainerComponent, SuicideEvent>(OnSuicide);
 
         SubscribeLocalEvent<VisitingMindComponent, EntityTerminatingEvent>(OnVisitingTerminating);
+        SubscribeLocalEvent<MindComponent, EntityTerminatingEvent>(OnMindTerminating);  // Reserve edit: Try to fix tests
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnReset);
         SubscribeLocalEvent<MindComponent, ComponentStartup>(OnMindStartup);
         SubscribeLocalEvent<MindContainerComponent, EntityRenamedEvent>(OnRenamed); // Goob edit
@@ -167,6 +168,29 @@ public abstract partial class SharedMindSystem : EntitySystem
         if (component.MindId != null)
             UnVisit(component.MindId.Value);
     }
+
+    // Reserve edit start: Try to fix tests
+    private void OnMindTerminating(EntityUid uid, MindComponent component, ref EntityTerminatingEvent args)
+    {
+        var query = EntityQueryEnumerator<MindContainerComponent>();
+        while (query.MoveNext(out var container_uid, out var container))
+        {
+            var dirty = false;
+            if (container.Mind == uid)
+            {
+                container.Mind = null;
+                dirty = true;
+            }
+            if (container.LastMindStored == uid)
+            {
+                container.LastMindStored = null;
+                dirty = true;
+            }
+            if (dirty)
+                Dirty(container_uid, container);
+        }
+    }
+    // Reserve edit end: Try to fix tests
 
     /// <summary>
     /// Checks to see if the user's mind prevents them from suicide

@@ -386,20 +386,20 @@
       Critical:
         reagent: SpaceDrugs
         quantity: 25
-  - type: RandomSprite
-    available:
-        - enum.DamageStateVisualLayers.Base:
-            medibot: ""
-          enum.DamageStateVisualLayers.BaseUnshaded:
-            powered: Rainbow
+  # - type: RandomSprite  # Reserve: Bring back original medibot
+  #   available:
+  #       - enum.DamageStateVisualLayers.Base:
+  #           medibot: ""
+  #         enum.DamageStateVisualLayers.BaseUnshaded:
+  #           powered: Rainbow
   - type: Sprite
-    sprite: _Goobstation/Mobs/Silicon/Bots/medibot.rsi
+    sprite: Mobs/Silicon/Bots/medibot.rsi  # Reserve: Bring back original medibot
     layers:
       - state: medibot
         map: [ "enum.DamageStateVisualLayers.Base" ]
-      - state: powered
-        map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-        shader: unshaded
+      # - state: powered  # Reserve: Bring back original medibot
+      #   map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      #   shader: unshaded
   - type: HTN
     rootTask:
       task: MedibotCompound
@@ -414,7 +414,7 @@
     interactFailureString: petting-failure-medibot
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
-      path: /Audio/Animals/cat_meow.ogg
+      path: /Audio/Ambience/Objects/periodic_beep.ogg  # Reserve: Bring back original medibot
   - type: ShowHealthBars
     damageContainers:
     - Biological
