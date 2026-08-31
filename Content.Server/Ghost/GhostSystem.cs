@@ -434,7 +434,8 @@ namespace Content.Server.Ghost
                     !HasComp<BorgChassisComponent>(entity))
                     continue;
 
-                var playerDepartmentId = _prototypeManager.Index<DepartmentPrototype>("Specific").ID;
+                var defaultDepartmentID = "Unknown";
+                var playerDepartmentId = _prototypeManager.Index<DepartmentPrototype>(defaultDepartmentID).ID;
                 var playerJobName = Loc.GetString("generic-unknown-title");
 
                 if (_jobs.MindTryGetJob(mindContainer.Mind ?? mindContainer.LastMindStored,

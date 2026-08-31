@@ -1,4 +1,3 @@
-/* Reserve - use the other barks
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
@@ -69,4 +68,3 @@ public sealed partial class BarkPrototype : IPrototype
     [DataField]
     public bool RoundStart = true;
 }
-*/

@@ -11,5 +11,5 @@
   # Reserve - antag UI
   category: Team
   icon:
-    sprite: Mobs/Aliens/Xenos/queen.rsi
-    state: sleeping
+    sprite: _White/Interface/Actions/xenomorph.rsi
+    state: evolve_queen

@@ -13,5 +13,5 @@
   # Reserve - antag UI
   category: Team
   icon:
-    sprite: _Goobstation/Blob/Mobs/blob.rsi
-    state: blob_core_overlay
+    sprite: _Goobstation/Blob/Actions/blob.rsi
+    state: blobFactory

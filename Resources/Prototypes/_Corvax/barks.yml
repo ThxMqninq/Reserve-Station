@@ -268,16 +268,16 @@
   soundCollection:
     collection: BorgSyndieBark
 
-# Durk
-- type: soundCollection
-  id: DurkBark
-  files:
-    - /Audio/_Goobstation/Voice/Barks/Durk/a.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/e.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/i.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/o.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/u.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/y.wav
+# # Durk # Reserve edit - commented out
+# - type: soundCollection
+#   id: DurkBark
+#   files:
+#     - /Audio/_Goobstation/Voice/Barks/Durk/a.wav
+#     - /Audio/_Goobstation/Voice/Barks/Durk/e.wav
+#     - /Audio/_Goobstation/Voice/Barks/Durk/i.wav
+#     - /Audio/_Goobstation/Voice/Barks/Durk/o.wav
+#     - /Audio/_Goobstation/Voice/Barks/Durk/u.wav
+#     - /Audio/_Goobstation/Voice/Barks/Durk/y.wav
 
 - type: bark
   id: Durk
@@ -287,7 +287,7 @@
   minPitch: 0.9
   maxPitch: 1.1
   soundCollection:
-    collection: DurkBark
+    collection: Aviu1Bark # Reserve edit - commented out
 
 # Aviu
 - type: soundCollection

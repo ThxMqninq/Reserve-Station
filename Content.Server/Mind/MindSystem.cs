@@ -15,7 +15,6 @@ using Robust.Shared.Player;
 using Robust.Shared.Utility;
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.Mind.Commands;
-using Content.Shared._Goobstation.Wizard.BindSoul;
 using Content.Shared.Tag;
 
 // Goobstation
@@ -47,7 +46,7 @@ public sealed class MindSystem : SharedMindSystem
 
     private void OnMindShutdown(EntityUid uid, MindComponent mind, ComponentShutdown args)
     {
-        if (mind.UserId is {} user)
+        if (mind.UserId is { } user)
         {
             UserMinds.Remove(user);
             if (_players.TryGetPlayerData(user, out var data) && data.ContentData() is { } oldData)
@@ -67,7 +66,7 @@ public sealed class MindSystem : SharedMindSystem
             return;
 
         // If the player is currently visiting some other entity, simply attach to that entity.
-        if (mind.VisitingEntity is {Valid: true} visiting
+        if (mind.VisitingEntity is { Valid: true } visiting
             && visiting != uid
             && !Deleted(visiting)
             && !Terminating(visiting))
@@ -204,7 +203,7 @@ public sealed class MindSystem : SharedMindSystem
             {
                 // Happens when transferring to your currently visited entity.
                 if (!_players.TryGetSessionByEntity(entity.Value, out var session) ||
-                    mind.UserId == null || actor.PlayerSession != session )
+                    mind.UserId == null || actor.PlayerSession != session)
                 {
                     throw new ArgumentException("Visit target already has a session.", nameof(entity));
                 }
@@ -245,6 +244,8 @@ public sealed class MindSystem : SharedMindSystem
             mind.OwnedEntity = null;
             Entity<MindComponent> mindEnt = (mindId, mind);
             Entity<MindContainerComponent> containerEnt = (oldEntity.Value, oldContainer);
+            // Reserve: Set LastMindStored here instead of in MindRemovedMessage constructor to avoid side effects
+            oldContainer.LastMindStored = mindId;
             RaiseLocalEvent(oldEntity.Value, new MindRemovedMessage(mindEnt, containerEnt));
             RaiseLocalEvent(mindId, new MindGotRemovedEvent(mindEnt, containerEnt));
             Dirty(oldEntity.Value, oldContainer);

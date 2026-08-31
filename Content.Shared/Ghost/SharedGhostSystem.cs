@@ -164,22 +164,22 @@ namespace Content.Shared.Ghost
         /// <summary>
         /// Is player is ghost
         /// </summary>
-        public bool IsGhost { get;  }
+        public bool IsGhost { get; }
 
         /// <summary>
         /// Is player body alive
         /// </summary>
-        public bool IsAlive { get;  }
+        public bool IsAlive { get; }
 
         /// <summary>
         /// Is player body dead
         /// </summary>
-        public bool IsDead { get;  }
+        public bool IsDead { get; }
 
         /// <summary>
         /// Is player left from body
         /// </summary>
-        public bool IsLeft { get;  }
+        public bool IsLeft { get; }
     }
 
     [Serializable, NetSerializable]
@@ -253,7 +253,7 @@ namespace Content.Shared.Ghost
         /// <summary>
         /// Display name to be surfaced in the ghost warps menu
         /// </summary>
-        public string Description { get;  } // Reserve-Edit | IsWarpPoint > Description
+        public string Description { get; } // Reserve-Edit | IsWarpPoint > Description
     }
 
     /// <summary>

@@ -32,14 +32,14 @@ public sealed partial class GoobAdminVerbSystem
         {
             Text = Loc.GetString("admin-verb-text-make-changeling"),
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Goobstation/Changeling/changeling_abilities.rsi"), "transform"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Changeling"), // Reserve edit: Fix antag verbs
             Act = () =>
             {
                 if (!HasComp<SiliconComponent>(args.Target))
                     _antag.ForceMakeAntag<ChangelingRuleComponent>(targetPlayer, "Changeling");
             },
             Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-changeling"),
+            Message = string.Join(": ", Loc.GetString("admin-verb-text-make-changeling"), Loc.GetString("admin-verb-make-changeling")), // Reserve edit: Fix antag verbs
         };
         if (!HasComp<SiliconComponent>(args.Target))
             args.Verbs.Add(ling);
@@ -55,7 +55,7 @@ public sealed partial class GoobAdminVerbSystem
                 EnsureComp<BlobCarrierComponent>(args.Target).HasMind = HasComp<ActorComponent>(args.Target);
             },
             Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-text-make-blob"),
+            Message = string.Join(": ", Loc.GetString("admin-verb-text-make-blob"), Loc.GetString("admin-verb-make-blob")), // Reserve edit: Fix antag verbs
         };
         if (!HasComp<SiliconComponent>(args.Target))
             args.Verbs.Add(blobAntag);
@@ -71,7 +71,7 @@ public sealed partial class GoobAdminVerbSystem
                 _antag.ForceMakeAntag<DevilRuleComponent>(targetPlayer, "Devil");
             },
             Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-devil"),
+            Message = string.Join(": ", Loc.GetString("admin-verb-text-make-devil"), Loc.GetString("admin-verb-make-devil")), // Reserve edit: Fix antag verbs
         };
         args.Verbs.Add(devilAntag);
 
@@ -88,7 +88,7 @@ public sealed partial class GoobAdminVerbSystem
                 _antag.ForceMakeAntag<ShadowlingRuleComponent>(targetPlayer, "Shadowling");
             },
             Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-shadowling"),
+            Message = string.Join(": ", Loc.GetString("admin-verb-text-make-shadowling"), Loc.GetString("admin-verb-make-shadowling")), // Reserve edit: Fix antag verbs
         };
         args.Verbs.Add(shadowling);
     }

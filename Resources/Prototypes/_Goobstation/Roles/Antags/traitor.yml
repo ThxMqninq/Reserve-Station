@@ -11,5 +11,5 @@
   # Reserve - antag UI
   category: Solo
   icon:
-    sprite: Objects/Misc/pens.rsi
-    state: overpriced_pen
+    sprite: _Goobstation/Clothing/OuterClothing/Modsuits/corporate.rsi
+    state: helmet-sealed

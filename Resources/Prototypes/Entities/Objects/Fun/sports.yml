@@ -93,7 +93,7 @@
     damageModifierSet: Metallic
     # Goobstation end
   - type: Item
-    size: Small
+    size: Tiny  # Reserve edit - Upstream 3008 - these should be tiny!
     sprite: Objects/Fun/Balls/tennisball.rsi
   - type: EmitSoundOnUse
     sound:

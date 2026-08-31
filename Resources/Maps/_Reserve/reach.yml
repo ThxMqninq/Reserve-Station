@@ -13863,6 +13863,10 @@ entities:
     - type: Transform
       pos: 5.41286,-8.437588
       parent: 2
+    - type: StorageFill
+      contents: []
+    - type: EntityTableContainerFill
+      containers: {}
     - type: Storage
       storedItems:
         2758:
