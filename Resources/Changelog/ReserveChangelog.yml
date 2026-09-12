@@ -1018,3 +1018,9 @@ Entries:
         называется "Авторы и меценаты".
   id: 122
   time: '2026-09-11T21:24:54.0000000+00:00'
+- author: mqole, ReconPangolin, Ceterai
+  changes:
+    - type: Add
+      message: Консоль сервисных событий.
+  id: 123
+  time: '2026-09-12T22:54:21.0000000+00:00'
