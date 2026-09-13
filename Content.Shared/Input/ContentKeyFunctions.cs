@@ -71,6 +71,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
         public static readonly BoundKeyFunction ResistGrab = "ResistGrab"; // Goobstation - Grab Intent
+        public static readonly BoundKeyFunction OfferItem = "OfferItem";  // Reserve edit: Offer Item system port from WWDP
         // Reserve edit start: Posing system port
         public static readonly BoundKeyFunction TogglePosing = "TogglePosing";
         public static readonly BoundKeyFunction PosingOffsetLeft = "PosingOffsetLeft";
