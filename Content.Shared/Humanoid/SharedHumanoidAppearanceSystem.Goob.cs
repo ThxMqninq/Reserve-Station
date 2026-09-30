@@ -36,7 +36,8 @@ public abstract partial class SharedHumanoidAppearanceSystem
         targetHumanoid.MarkingSet.EnsureSexes(sourceHumanoid.Sex, _markingManager);
         targetHumanoid.MarkingSet.EnsureDefault(targetHumanoid.SkinColor, targetHumanoid.EyeColor, _markingManager);
 
-        SetBarkVoice(target, sourceHumanoid.BarkVoice, targetHumanoid);
+        // SetBarkVoice(target, sourceHumanoid.BarkVoice, targetHumanoid);  // Reserve edit - use the other barks
+        _barkSystem.ApplyBark(target, sourceHumanoid.BarkVoice);  // Reserve edit - use the other barks
 
         if (TryComp<GrammarComponent>(target, out var grammar))
             _grammarSystem.SetGender((target, grammar), sourceHumanoid.Gender);
