@@ -11,6 +11,9 @@
 **Space Station 14** - это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 Больше про текущую сборку Robust Toolbox, используемую Reserve Station, можно узнать в [Robust Toolbox README](/RobustToolbox/README.md).
 
+- Владелец/Создатель: <img src="https://github.com/echotry-ss14.png" width="16" height="16" alt="echotry" style="border-radius:50%;" loading="lazy"/> [echotry](https://github.com/echotry-ss14)
+- Лидер/Хост/Глав. разработчица: <img src="https://github.com/Ceterai.png" width="16" height="16" alt="Ceterai" style="border-radius:50%;" loading="lazy"/> [Орхидея](https://github.com/Ceterai)
+
 ## Сборка
 
 Следуйте [гайду от Space Wizards](https://docs.spacestation14.com/en/general-development/setup/setting-up-a-development-environment.html) по настройке рабочей среды, но учитывайте, что наши репозитории отличаются и некоторые вещи могут отличаться.
