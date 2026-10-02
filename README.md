@@ -6,10 +6,16 @@
 
 ---
 
-**Резерв** - это русскоязычный форк [Goob Station](https://github.com/Goob-Station/Goob-Station), который, в свою очередь, является форком Space Station 14.
+**Резерв** - это некоммерческий проект с комфортным уровнем РП. Мы нацелены на настоящую РП составляющую игры, которая **не будет** навязываться чересчур строгими правилами, заставляя игроков отыгрывать по стандартному шаблону.
+
+Билд сервера - это сильно модифицированный форк [Goob Station](https://github.com/Goob-Station/Goob-Station), который, в свою очередь, является форком Space Station 14.
 
 **Space Station 14** - это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 Больше про текущую сборку Robust Toolbox, используемую Reserve Station, можно узнать в [Robust Toolbox README](/RobustToolbox/README.md).
+
+Билд дополнен многочисленными **уникальными механиками**, **контентом** и **лучшими портами**! [**Кровные Братья**](https://github.com/Reserve-Station/Reserve-Station/pull/264), [**Заговорщики**](https://github.com/Reserve-Station/Reserve-Station/pull/157), [**Горящие жидкости**](https://github.com/Reserve-Station/Reserve-Station/pull/345), [**Бармания Орхидеи**](https://github.com/Reserve-Station/Reserve-Station/pull/278), [**Сад Орхидеи**](https://github.com/Reserve-Station/Reserve-Station/pull/285), [**Прокачанный удобный интерфейс**](https://github.com/Reserve-Station/Reserve-Station/pull/303), [**Система меценатов**](https://github.com/Reserve-Station/Reserve-Station/pull/388), [**Расширенная кастомизация**](https://github.com/Reserve-Station/Reserve-Station/pull/327), [**Своя стилистика**](https://github.com/Reserve-Station/Reserve-Station/pull/362), [**Удобный Дискорд-бот**](https://github.com/Reserve-Station/Reserve-Station/pull/369), [**Королевская битва**](https://github.com/Reserve-Station/Reserve-Station/pull/73) и многое, многое другое!
+
+Кроме того, билд полностью переведён на русский язык, и переводы регулярно обновляются с появлением нового контента.
 
 - Владелец/Создатель: <img src="https://github.com/echotry-ss14.png" width="16" height="16" alt="echotry" style="border-radius:50%;" loading="lazy"/> [echotry](https://github.com/echotry-ss14)
 - Лидер/Хост/Глав. разработчица: <img src="https://github.com/Ceterai.png" width="16" height="16" alt="Ceterai" style="border-radius:50%;" loading="lazy"/> [Орхидея](https://github.com/Ceterai)
@@ -58,7 +64,7 @@
 
 ## Лицензия
 
-Содержимое, добавленное в этот репозиторий после коммита [8270907bdc509a3fb5ecfecde8cc14e5845ede36](https://github.com/Goob-Station/Goob-Station/commit/8270907bdc509a3fb5ecfecde8cc14e5845ede36), распространяется по лицензии GNU Affero General Public License версии 3.0, если не указано иное. См. LICENSE-AGPLv3.txt. Содержимое, внесённое в этот репозиторий до коммита [8270907bdc509a3fb5ecfecde8cc14e5845ede36](https://github.com/Goob-Station/Goob-Station/commit/8270907bdc509a3fb5ecfecde8cc14e5845ede36), лицензируется по лицензии MIT, если не указано иное. См. LICENSE.txt.
+Содержимое, добавленное в этот репозиторий после коммита [8270907bdc509a3fb5ecfecde8cc14e5845ede36](https://github.com/Reserve-Station/Reserve-Station/commit/8270907bdc509a3fb5ecfecde8cc14e5845ede36), распространяется по лицензии GNU Affero General Public License версии 3.0, если не указано иное. См. [AGPL-3.0-or-later.txt](/LICENSES/AGPL-3.0-or-later.txt). Содержимое, внесённое в этот репозиторий до этого коммита, лицензируется по лицензии MIT, если не указано иное. См. [MIT.txt](/LICENSES/MIT.txt).
 
 Большинство ассетов лицензировано под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Лицензия и авторские права на ассеты указаны в файле метаданных. [Пример](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
