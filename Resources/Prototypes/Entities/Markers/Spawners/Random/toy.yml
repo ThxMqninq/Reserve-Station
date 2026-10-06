@@ -115,6 +115,9 @@
       - id: PlushieLeoMalone
       - id: PlushieRouge
       - id: PlushieRedstonewolf
+      - id: PlushieDoremyZerg
+      - id: PlushieSanyati
+      - id: PlushieHarel
     # Reserve edit end: Random maints
     # Reserve edit start: Reserve Plushies
     - !type:GroupSelector
