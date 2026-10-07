@@ -33,7 +33,7 @@
       shader: unshaded
     state: base
   - type: PointLight
-    color: "#c9c7c2" # 5000K color temp | Orion-Edit: Changed color/temp
+    color: "#c9c7c2" # 5000K color temp | Reserve edit: Update Light: Changed color/temp
     energy: 1.5 # Reserve edit: Update Light: 0.8 > 1.5
     radius: 6 # Reserve edit: Update Light: 10 > 6
     softness: 1
@@ -454,7 +454,7 @@
     energy: 0.6
     offset: "0, 0.4"
     color: "#7CFC00"
-    mask: /Textures/Effects/LightMasks/double_cone.png
+    lightMask: ConeDouble
   - type: ApcPowerReceiver
   - type: ExtensionCableReceiver
   - type: Battery
